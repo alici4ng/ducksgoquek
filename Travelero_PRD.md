@@ -98,8 +98,9 @@ Extends the "Most Covered" route beyond static built cover (malls, tunnels, elev
    out skel qt;
    ```
 2. **Diff the results:** flag ways with no coverage tag at all, or ambiguous ones (e.g. unclear if a segment is under the elevated linkway).
-3. **Run Hermes only on the gaps:** Hermes visually inspects the flagged segments against satellite/street-level imagery and classifies coverage (`covered=yes/no`), given the small scope this is expected to take well under an hour.
-4. **Patch the GeoJSON** with Hermes's outputs → this becomes `pedestrian_ways.geojson`.
+3. **Corridor boundary scan (efficiency step):** for the known elevated linkway, don't visually review every way along it — traverse the connected way sequence from Monash to Pyramid, verify only the two transition points (where cover starts and ends), and bulk-tag everything in between. Anything that looks like a real gap mid-corridor gets pulled out and reviewed individually instead.
+4. **Run Hermes only on the remaining gaps:** Hermes visually inspects the flagged segments against satellite/street-level imagery and classifies coverage (`covered=yes/no`), given the small scope this is expected to take well under an hour.
+5. **Patch the GeoJSON** with Hermes's outputs → this becomes `pedestrian_ways.geojson`.
 
 ### 8.2 Runtime Flow
 1. **On load:** app fetches static way-graph GeoJSON (patched above) + live `hazard_reports` from Supabase.
@@ -112,6 +113,11 @@ Extends the "Most Covered" route beyond static built cover (malls, tunnels, elev
 2. **Data prep (parallel to Section 8.1, same technique, different tag):** Overpass query for `building=*`/`building` relations in the bounding box → resolve height per building (explicit tag → `building:levels` → type heuristic → 12m default) → hand-verify heights for the handful of landmark buildings on the demo corridor (Sunway Pyramid, Sunway Resort Hotel, etc.).
 3. **Merge point:** once the base graph exists, compute `shadeMap(G, model, now)` before each route request and pass it into the route-weight function alongside `rainMode`. No changes to the graph structure or node keys required — shade is looked up by edge, same key scheme the base graph already uses.
 4. **Verify:** `/route` still returns correctly with `shade: null` (unaffected callers) and with a real shade map (route changes by time of day).
+
+## 8.4 Demo Script — Route Selection
+The Bandar Sunway corridor has a known continuous elevated covered linkway (Monash → BRT station → Sunway University → Pyramid). This is good for the pitch — the router independently rediscovering the path locals already use is a strong line — but it means an arbitrary start/end pair on this corridor risks all three routes (Fastest, Most Covered, Balanced) converging on the same line, which would make the three-route feature look redundant on stage.
+
+**Pick the demo start/end pair deliberately** so the fastest path tempts a pedestrian across an open road, car park, or exposed stretch instead of the linkway — so Fastest and Most Covered visibly diverge, and Balanced visibly sits between them. Rehearse this specific pair; don't discover route overlap for the first time during judging.
 
 ## 9. Success Criteria for the Demo
 - Live app on a Vercel URL.
