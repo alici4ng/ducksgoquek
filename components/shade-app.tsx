@@ -2,7 +2,7 @@
 
 import { CloudSun, Umbrella } from 'lucide-react'
 import Link from 'next/link'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { MapSurface, type LatLngBounds } from '@/components/map-canvas'
 import { MapHud, StatusBar } from '@/components/map-hud'
@@ -31,7 +31,8 @@ export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
   const [originId, setOriginId] = useState<string>('monash')
   const [destinationId, setDestinationId] = useState<string>('pyramid')
   const [computing, setComputing] = useState(false)
-  const [rainMode, setRainMode] = useState(variant === 'rain')
+  // Rain routing is a page variant (/rain), not a toggle on the sun view.
+  const rainMode = variant === 'rain'
   const [activeStepId, setActiveStepId] = useState<string | null>(null)
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
   const [reminderOpen, setReminderOpen] = useState(false)
@@ -48,7 +49,7 @@ export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
   useEffect(() => {
     if (!computing) return
     let cancelled = false
-    buildRouteSet(originId, destinationId).then((result) => {
+    buildRouteSet(originId, destinationId, rainMode).then((result) => {
       if (cancelled) return
       setRoutes(result)
       setComputing(false)
@@ -57,7 +58,7 @@ export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
     return () => {
       cancelled = true
     }
-  }, [computing, originId, destinationId])
+  }, [computing, originId, destinationId, rainMode])
 
   useEffect(() => {
     if (phase !== 'route') return
@@ -115,12 +116,7 @@ export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
       />
 
       <StatusBar />
-      <MapHud
-        rainMode={rainMode}
-        onRainModeChange={setRainMode}
-        onUvPress={() => setReminderOpen(true)}
-        weather={weather}
-      />
+      <MapHud weather={weather} />
 
       {variant === 'rain' && (
         <div className="pointer-events-none absolute inset-x-3 top-24 z-20 flex justify-center">
@@ -154,12 +150,6 @@ export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
             setDestinationId(originId)
           }}
           onSubmit={() => setComputing(true)}
-          onSuggestion={(from, to) => {
-            setOriginId(from)
-            setDestinationId(to)
-            setSelectedRouteId(null)
-            setComputing(true)
-          }}
         />
       ) : (
         <RouteSheet

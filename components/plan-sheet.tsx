@@ -8,14 +8,6 @@ import { Spinner } from '@/components/ui/spinner'
 import { placeById } from '@/lib/sunway-city'
 import { cn } from '@/lib/utils'
 
-/** Trips the demo cares about, phrased as the pairs people actually walk. */
-const SUGGESTIONS: { from: string; to: string; label: string }[] = [
-  { from: 'monash', to: 'pyramid', label: 'Monash → Pyramid' },
-  { from: 'sunway-university', to: 'medical', label: 'Sunway U → Medical' },
-  { from: 'brt-setia-jaya', to: 'geo', label: 'Setia Jaya → Geo' },
-  { from: 'south-quay', to: 'lagoon', label: 'South Quay → Lagoon' },
-]
-
 type PlanSheetProps = {
   originId: string | null
   destinationId: string | null
@@ -24,7 +16,6 @@ type PlanSheetProps = {
   onEditDestination: () => void
   onSwap: () => void
   onSubmit: () => void
-  onSuggestion: (from: string, to: string) => void
 }
 
 export function PlanSheet({
@@ -35,7 +26,6 @@ export function PlanSheet({
   onEditDestination,
   onSwap,
   onSubmit,
-  onSuggestion,
 }: PlanSheetProps) {
   const origin = originId ? placeById(originId) : undefined
   const destination = destinationId ? placeById(destinationId) : undefined
@@ -89,19 +79,6 @@ export function PlanSheet({
           >
             <ArrowUpDown />
           </Button>
-        </div>
-
-        <div className="-mx-4 flex gap-1.5 overflow-x-auto px-4">
-          {SUGGESTIONS.map((trip) => (
-            <button
-              key={trip.label}
-              type="button"
-              onClick={() => onSuggestion(trip.from, trip.to)}
-              className="shrink-0 rounded-4xl border border-border bg-background px-3 py-1.5 text-[0.72rem] font-medium text-muted-foreground transition-colors hover:bg-muted"
-            >
-              {trip.label}
-            </button>
-          ))}
         </div>
 
         <Button

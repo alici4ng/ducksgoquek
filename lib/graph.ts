@@ -240,11 +240,15 @@ export function snapToEdge(graph: Graph, ll: LatLng): Snap {
 
 // ------------------------------------------------------------------ routing
 
-/** Exposure-aware cost: minutes of travel, taxed by time in full sun. */
-function edgeCost(coverage: Coverage, meters: number, shadePreference: number) {
+/** Exposure-aware cost: minutes of travel, taxed by time in full sun.
+ *  Rain adds its own surcharge: a minute in the wet is worth about eight
+ *  dry ones. */
+function edgeCost(coverage: Coverage, meters: number, shadePreference: number, rain: boolean) {
   const meta = COVERAGE_META[coverage]
   const minutes = meters / meta.speed
-  return minutes * (1 + shadePreference * 6 * meta.exposure)
+  let penalty = 1 + shadePreference * 6 * meta.exposure
+  if (rain) penalty += 8 * meta.wetness
+  return minutes * penalty
 }
 
 /** Sub-path of an edge from its projection point to one of its endpoints. */
@@ -271,6 +275,7 @@ export function routeBetween(
   from: LatLng,
   to: LatLng,
   shadePreference: number,
+  rain = false,
 ): RoutedPath | null {
   const snapA = snapToEdge(graph, from)
   const snapB = snapToEdge(graph, to)
@@ -336,7 +341,7 @@ export function routeBetween(
 
     for (const link of linksOf(current)) {
       const edge = graph.edges[link.edgeIndex]
-      const next = currentDist + edgeCost(edge.coverage, link.meters, shadePreference)
+      const next = currentDist + edgeCost(edge.coverage, link.meters, shadePreference, rain)
       if (next < (dist.get(link.to) ?? Infinity)) {
         dist.set(link.to, next)
         prev.set(link.to, { from: current, edgeIndex: link.edgeIndex, forward: link.forward, meters: link.meters })
