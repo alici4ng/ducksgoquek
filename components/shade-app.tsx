@@ -1,19 +1,20 @@
 'use client'
 
+import { CloudSun, Umbrella } from 'lucide-react'
+import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
 
 import { MapSurface, type Bounds } from '@/components/map-canvas'
 import { MapHud, StatusBar } from '@/components/map-hud'
-import { PlacePicker } from '@/components/place-picker'
 import { PlaceSheet } from '@/components/place-sheet'
 import { PlanSheet } from '@/components/plan-sheet'
 import { RouteSheet } from '@/components/route-sheet'
 import { SunscreenSheet } from '@/components/sunscreen-sheet'
 import { boundsOf, buildRouteSet } from '@/lib/route-engine'
 import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { useWeather } from '@/lib/use-weather'
 
 type Phase = 'plan' | 'route'
-type PickerTarget = 'origin' | 'destination' | null
 
 /** Sheets cover the lower half, so pad the frame downward to keep it clear. */
 function aboveSheet(bounds: Bounds): Bounds {
@@ -25,24 +26,27 @@ function aboveSheet(bounds: Bounds): Bounds {
   }
 }
 
-export function ShadeApp() {
+export function ShadeApp({ variant = 'sun' }: { variant?: 'sun' | 'rain' }) {
+  const weather = useWeather()
   const [phase, setPhase] = useState<Phase>('plan')
   const [originId, setOriginId] = useState<string>('monash')
   const [destinationId, setDestinationId] = useState<string>('pyramid')
   const [computing, setComputing] = useState(false)
-  const [rainMode, setRainMode] = useState(false)
-  const [showCoveredNetwork, setShowCoveredNetwork] = useState(true)
+  const [rainMode, setRainMode] = useState(variant === 'rain')
   const [activeStepId, setActiveStepId] = useState<string | null>(null)
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
   const [reminderOpen, setReminderOpen] = useState(false)
-  const [picker, setPicker] = useState<PickerTarget>(null)
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null)
-  const [recents, setRecents] = useState<string[]>(['pyramid', 'monash', 'medical'])
   const [focus, setFocus] = useState<Bounds | null>(null)
 
+  // Real rain flips rain mode on; the toggle stays as a manual override.
+  useEffect(() => {
+    if (weather?.raining) setRainMode(true)
+  }, [weather?.raining])
+
   const routes = useMemo(
-    () => (phase === 'route' ? buildRouteSet(originId, destinationId) : []),
-    [phase, originId, destinationId],
+    () => (phase === 'route' ? buildRouteSet(originId, destinationId, rainMode) : []),
+    [phase, originId, destinationId, rainMode],
   )
   const route =
     routes.find((candidate) => candidate.id === selectedRouteId) ?? routes[0] ?? null
@@ -68,15 +72,9 @@ export function ShadeApp() {
     setFocus(aboveSheet(boundsOf(route.points, 200)))
   }, [route])
 
-  function remember(placeId: string) {
-    setRecents((current) => [placeId, ...current.filter((id) => id !== placeId)].slice(0, 5))
-  }
-
-  function pick(placeId: string) {
-    if (picker === 'origin') setOriginId(placeId)
-    if (picker === 'destination') setDestinationId(placeId)
-    remember(placeId)
-    setPicker(null)
+  function changeEndpoint(target: 'origin' | 'destination', placeId: string) {
+    if (target === 'origin') setOriginId(placeId)
+    else setDestinationId(placeId)
     setPhase('plan')
     setSelectedRouteId(null)
     focusPlace(placeId)
@@ -101,7 +99,6 @@ export function ShadeApp() {
         route={phase === 'route' ? route : null}
         activeStepId={activeStepId}
         rainMode={rainMode}
-        showCoveredNetwork={showCoveredNetwork}
         originId={originId}
         destinationId={destinationId}
         selectedPlaceId={selectedPlaceId}
@@ -110,7 +107,6 @@ export function ShadeApp() {
           setSelectedPlaceId(placeId)
           focusPlace(placeId)
         }}
-        onToggleCoveredNetwork={() => setShowCoveredNetwork((value) => !value)}
       />
 
       <StatusBar />
@@ -118,26 +114,41 @@ export function ShadeApp() {
         rainMode={rainMode}
         onRainModeChange={setRainMode}
         onUvPress={() => setReminderOpen(true)}
+        weather={weather}
       />
+
+      {variant === 'rain' && (
+        <div className="pointer-events-none absolute inset-x-3 top-24 z-20 flex justify-center">
+          <div className="pointer-events-auto flex items-center gap-2 rounded-4xl border border-rain/30 bg-card/95 px-3.5 py-2 shadow-sm backdrop-blur">
+            <Umbrella className="size-4 shrink-0 text-rain" />
+            <span className="text-[0.78rem] font-medium whitespace-nowrap">
+              {weather?.raining
+                ? `${weather.label} in Sunway City — driest routes first`
+                : 'Rain routing — driest routes first'}
+            </span>
+            <Link
+              href="/"
+              className="flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-[0.72rem] font-medium text-muted-foreground transition-colors hover:bg-muted"
+            >
+              <CloudSun className="size-3.5" />
+              Sun view
+            </Link>
+          </div>
+        </div>
+      )}
 
       {phase === 'plan' || !route ? (
         <PlanSheet
           originId={originId}
           destinationId={destinationId}
           computing={computing}
-          onEditOrigin={() => setPicker('origin')}
-          onEditDestination={() => setPicker('destination')}
+          onOriginChange={(placeId) => changeEndpoint('origin', placeId)}
+          onDestinationChange={(placeId) => changeEndpoint('destination', placeId)}
           onSwap={() => {
             setOriginId(destinationId)
             setDestinationId(originId)
           }}
           onSubmit={() => setComputing(true)}
-          onSuggestion={(from, to) => {
-            setOriginId(from)
-            setDestinationId(to)
-            setSelectedRouteId(null)
-            setComputing(true)
-          }}
         />
       ) : (
         <RouteSheet
@@ -156,27 +167,16 @@ export function ShadeApp() {
         />
       )}
 
-      <PlacePicker
-        open={picker !== null}
-        title={picker === 'origin' ? 'Choose a starting point' : 'Choose a destination'}
-        excludeId={picker === 'origin' ? destinationId : originId}
-        recents={recents}
-        onOpenChange={(open) => setPicker(open ? picker : null)}
-        onPick={pick}
-      />
-
       <PlaceSheet
         placeId={selectedPlaceId}
         onOpenChange={(open) => setSelectedPlaceId(open ? selectedPlaceId : null)}
         onSetOrigin={(placeId) => {
           setOriginId(placeId)
-          remember(placeId)
           setSelectedPlaceId(null)
           setPhase('plan')
         }}
         onSetDestination={(placeId) => {
           setDestinationId(placeId)
-          remember(placeId)
           setSelectedPlaceId(null)
           setSelectedRouteId(null)
           setComputing(true)
@@ -188,6 +188,7 @@ export function ShadeApp() {
         onOpenChange={setReminderOpen}
         coverage={route?.coverage ?? null}
         exposedMeters={route?.exposedMeters ?? null}
+        uvIndex={weather?.uvIndex ?? null}
       />
     </div>
   )

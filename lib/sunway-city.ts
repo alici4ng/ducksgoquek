@@ -9,6 +9,18 @@
  * accuracy.
  */
 
+import {
+  Building2,
+  Bus,
+  FerrisWheel,
+  GraduationCap,
+  Hotel,
+  Landmark,
+  ShoppingBag,
+  Stethoscope,
+  Trees,
+} from 'lucide-react'
+
 export const CITY = { w: 2200, h: 2600 }
 
 export type PlaceKind =
@@ -309,6 +321,38 @@ export const PLACES: Place[] = [
 ]
 
 export const PLACE_BY_ID = new Map(PLACES.map((p) => [p.id, p]))
+
+/** Icon per place kind, shared by the search predictions and the place sheet. */
+export const KIND_ICON: Record<
+  PlaceKind,
+  React.ComponentType<{ className?: string }>
+> = {
+  mall: ShoppingBag,
+  attraction: FerrisWheel,
+  campus: GraduationCap,
+  hospital: Stethoscope,
+  hotel: Hotel,
+  office: Building2,
+  transit: Bus,
+  residential: Landmark,
+  park: Trees,
+  water: Trees,
+  civic: Landmark,
+}
+
+export const KIND_LABEL: Record<PlaceKind, string> = {
+  mall: 'Shopping',
+  attraction: 'Attraction',
+  campus: 'Campus',
+  hospital: 'Healthcare',
+  hotel: 'Hotel',
+  office: 'Office',
+  transit: 'BRT station',
+  residential: 'Residential',
+  park: 'Park',
+  water: 'Waterfront',
+  civic: 'Civic',
+}
 
 /** Lakes and the Sungai Klang channel. */
 export const WATER: { id: string; name: string; d: string; labelAt?: [number, number] }[] = [

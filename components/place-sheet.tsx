@@ -2,7 +2,6 @@
 
 import { CircleDot, Navigation, X } from 'lucide-react'
 
-import { KIND_ICON, KIND_LABEL } from '@/components/place-picker'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -13,7 +12,7 @@ import {
 } from '@/components/ui/sheet'
 import { EDGES } from '@/lib/route-engine'
 import { COVERAGE_META } from '@/lib/shade-map'
-import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { KIND_ICON, KIND_LABEL, PLACE_BY_ID } from '@/lib/sunway-city'
 
 /** How this place connects to the rest of the network, by kind of cover. */
 function linksFor(node: string) {

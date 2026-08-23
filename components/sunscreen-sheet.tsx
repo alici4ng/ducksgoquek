@@ -13,7 +13,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet'
-import { COVERAGE_META, UV } from '@/lib/shade-map'
+import { COVERAGE_META, UV, uvBand } from '@/lib/shade-map'
 import { CONDITIONS, adTriggered } from '@/lib/sponsor'
 
 type SunscreenSheetProps = {
@@ -22,6 +22,8 @@ type SunscreenSheetProps = {
   /** Route figures, when a route is on screen behind the sheet. */
   coverage: number | null
   exposedMeters: number | null
+  /** Live UV index; falls back to the hardcoded demo value. */
+  uvIndex?: number | null
 }
 
 export function SunscreenSheet({
@@ -29,7 +31,9 @@ export function SunscreenSheet({
   onOpenChange,
   coverage,
   exposedMeters,
+  uvIndex,
 }: SunscreenSheetProps) {
+  const uv = { index: uvIndex ?? UV.index, ...uvBand(uvIndex ?? UV.index) }
   const showSponsor = adTriggered()
   const exposedMinutes =
     exposedMeters === null
@@ -65,9 +69,9 @@ export function SunscreenSheet({
                 Sunscreen reminder
               </SheetTitle>
               <SheetDescription className="text-[0.8rem]">
-                <span className="font-mono tabular">UV index {UV.index}</span>
+                <span className="font-mono tabular">UV index {uv.index}</span>
                 {' · '}
-                <span className={UV.ink}>{UV.label}</span>
+                <span className={uv.ink}>{uv.label}</span>
               </SheetDescription>
             </div>
           </SheetHeader>
@@ -81,12 +85,12 @@ export function SunscreenSheet({
                 </span>
                 <span className="flex items-baseline gap-1.5">
                   <span className="font-mono text-xl leading-none font-semibold tabular">
-                    {CONDITIONS.uvIndex}
+                    {uvIndex ?? CONDITIONS.uvIndex}
                   </span>
                   <span
-                    className={`truncate text-[0.7rem] font-medium ${UV.ink}`}
+                    className={`truncate text-[0.7rem] font-medium ${uv.ink}`}
                   >
-                    {UV.label}
+                    {uv.label}
                   </span>
                 </span>
               </div>
