@@ -46,7 +46,7 @@ export function SunscreenSheet({
       <SheetContent
         side="bottom"
         showCloseButton={false}
-        className="mx-auto flex max-h-[94dvh] max-w-[520px] flex-col gap-0 rounded-t-4xl border-border bg-card pb-5"
+        className="mx-auto flex max-h-[94%] max-w-[520px] flex-col gap-0 rounded-t-4xl border-border bg-card pb-5"
       >
         <div className="flex shrink-0 justify-center pt-2.5 pb-1">
           <span

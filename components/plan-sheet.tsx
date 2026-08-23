@@ -5,7 +5,7 @@ import { ArrowUpDown, Umbrella } from 'lucide-react'
 import { BottomSheet } from '@/components/bottom-sheet'
 import { Button } from '@/components/ui/button'
 import { Spinner } from '@/components/ui/spinner'
-import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { placeById } from '@/lib/sunway-city'
 import { cn } from '@/lib/utils'
 
 /** Trips the demo cares about, phrased as the pairs people actually walk. */
@@ -37,8 +37,8 @@ export function PlanSheet({
   onSubmit,
   onSuggestion,
 }: PlanSheetProps) {
-  const origin = originId ? PLACE_BY_ID.get(originId) : undefined
-  const destination = destinationId ? PLACE_BY_ID.get(destinationId) : undefined
+  const origin = originId ? placeById(originId) : undefined
+  const destination = destinationId ? placeById(destinationId) : undefined
   const ready = Boolean(origin && destination && origin.id !== destination.id)
 
   return (

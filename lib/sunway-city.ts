@@ -38,6 +38,9 @@ export type Place = {
   node: string
   /** Whether the interior itself is climate controlled / roofed. */
   sheltered: boolean
+  /** Real WGS84 position — set for places added via OSM search. */
+  lat?: number
+  lng?: number
   /** Minimum zoom at which the label is worth drawing. */
   labelFrom?: number
   blurb?: string
@@ -309,6 +312,18 @@ export const PLACES: Place[] = [
 ]
 
 export const PLACE_BY_ID = new Map(PLACES.map((p) => [p.id, p]))
+
+/** Places added at runtime via OSM search, kept for the session. */
+const CUSTOM_PLACES = new Map<string, Place>()
+
+export function registerCustomPlace(place: Place) {
+  CUSTOM_PLACES.set(place.id, place)
+}
+
+/** Resolves preset places first, then anything found via OSM search. */
+export function placeById(id: string): Place | undefined {
+  return PLACE_BY_ID.get(id) ?? CUSTOM_PLACES.get(id)
+}
 
 /** Lakes and the Sungai Klang channel. */
 export const WATER: { id: string; name: string; d: string; labelAt?: [number, number] }[] = [
