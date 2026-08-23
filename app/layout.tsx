@@ -13,11 +13,26 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
 })
 
+const DESCRIPTION =
+  'Shade-first walking navigation for extreme UV cities. Find the most covered route, not the fastest one.'
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://travelero.vercel.app'),
   title: 'Travelero',
-  description:
-    'Shade-first walking navigation for extreme UV cities. Find the most covered route, not the fastest one.',
+  description: DESCRIPTION,
   generator: 'v0.app',
+  openGraph: {
+    title: 'Travelero',
+    description: DESCRIPTION,
+    url: 'https://travelero.vercel.app',
+    siteName: 'Travelero',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Travelero',
+    description: DESCRIPTION,
+  },
   icons: {
     icon: [
       {

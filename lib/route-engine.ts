@@ -32,11 +32,73 @@ export type Route = {
   exposedMeters: number
   /** UV-weighted share of the trip that is protected, 0–100. */
   coverage: number
-  points: LatLng[]
+  points: Point[]
 }
 
-function stepTitle(coverage: Coverage, name: string, index: number): string {
-  switch (coverage) {
+/** Waiting for the bus is time you spend in the shade, but time all the same. */
+const TRANSIT_BOARDING_MINUTES = 3
+
+function pathToD(points: Point[]) {
+  return points
+    .map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`)
+    .join(' ')
+}
+
+function edgeCost(edge: Edge, meters: number, shadePreference: number, rain: boolean) {
+  const meta = COVERAGE_META[edge.coverage]
+  const minutes = meters / meta.speed + (edge.coverage === 'transit' ? TRANSIT_BOARDING_MINUTES : 0)
+  // Exposure is charged as extra perceived minutes, so the slider reads as
+  // "how many minutes is a minute of full sun worth to me". Rain adds its own
+  // surcharge: a minute in the wet is worth about eight dry ones.
+  let penalty = 1 + shadePreference * 6 * meta.exposure
+  if (rain) penalty += 8 * meta.wetness
+  return { minutes, cost: minutes * penalty }
+}
+
+function dijkstra(from: string, to: string, shadePreference: number, rain: boolean) {
+  const best: Record<string, number> = { [from]: 0 }
+  const prev: Record<string, { node: string; edgeIndex: number; forward: boolean }> = {}
+  const visited = new Set<string>()
+
+  for (;;) {
+    let current: string | null = null
+    let currentCost = Infinity
+    for (const [node, cost] of Object.entries(best)) {
+      if (!visited.has(node) && cost < currentCost) {
+        current = node
+        currentCost = cost
+      }
+    }
+    if (current === null) return null
+    if (current === to) break
+    visited.add(current)
+
+    for (const link of ADJACENCY[current] ?? []) {
+      const edge = EDGES[link.edgeIndex]
+      const { cost } = edgeCost(edge, EDGE_METERS[link.edgeIndex], shadePreference, rain)
+      const next = currentCost + cost
+      if (next < (best[link.to] ?? Infinity)) {
+        best[link.to] = next
+        prev[link.to] = { node: current, edgeIndex: link.edgeIndex, forward: link.forward }
+      }
+    }
+  }
+
+  const chain: { edgeIndex: number; forward: boolean }[] = []
+  let cursor = to
+  while (cursor !== from) {
+    const step = prev[cursor]
+    if (!step) return null
+    chain.unshift({ edgeIndex: step.edgeIndex, forward: step.forward })
+    cursor = step.node
+  }
+  return chain
+}
+
+function stepTitle(edge: Edge, place: Place | undefined, index: number) {
+  switch (edge.coverage) {
+    case 'transit':
+      return `Ride the BRT${place ? ` to ${place.short ?? place.name}` : ''}`
     case 'underground':
       return 'Take the underpass'
     case 'indoor':
@@ -65,6 +127,7 @@ function buildRoute(
   shadePreference: number,
   label: string,
   id: string,
+  rain = false,
 ): Route | null {
   const path = routeBetween(graph, from, to, shadePreference)
   if (!path || path.meters < 1) return null
@@ -142,6 +205,13 @@ export const ROUTE_OPTIONS = [
   { id: 'fastest', label: 'Fastest', shadePreference: 0 },
 ] as const
 
+/** Wet-day equivalents: the aggressive strategy reads as staying dry. */
+export const RAIN_ROUTE_OPTIONS = [
+  { id: 'driest', label: 'Driest', shadePreference: 1 },
+  { id: 'balanced', label: 'Balanced', shadePreference: 0.45 },
+  { id: 'fastest', label: 'Fastest', shadePreference: 0 },
+] as const
+
 export type RouteOptionId = (typeof ROUTE_OPTIONS)[number]['id']
 
 /** All three strategies between two places, de-duplicated when they agree. */
@@ -156,7 +226,7 @@ export async function buildRouteSet(fromPlaceId: string, toPlaceId: string): Pro
 
   const seen = new Set<string>()
   const routes: Route[] = []
-  for (const option of ROUTE_OPTIONS) {
+  for (const option of rain ? RAIN_ROUTE_OPTIONS : ROUTE_OPTIONS) {
     const route = buildRoute(
       graph,
       origin,
@@ -164,6 +234,7 @@ export async function buildRouteSet(fromPlaceId: string, toPlaceId: string): Pro
       option.shadePreference,
       option.label,
       option.id,
+      rain,
     )
     if (!route) continue
     const signature = route.steps.map((s) => `${s.coverage}:${s.detail}`).join('|')
