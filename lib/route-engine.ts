@@ -293,6 +293,8 @@ export type RouteStep = {
   minutes: number
   /** SVG path in world coordinates. */
   d: string
+  /** Raw world points, so the map can reproject the step onto real tiles. */
+  points: Point[]
 }
 
 export type Route = {
@@ -419,6 +421,7 @@ export function buildRoute(
       previous.meters += meters
       previous.minutes += minutes
       previous.d += ' ' + pathToD(points.slice(1)).replace(/^M/, 'L')
+      previous.points.push(...points.slice(1))
       if (!previous.detail.includes(edge.name)) previous.detail += ` · ${edge.name}`
       previous.title = stepTitle(edge, PLACE_BY_NODE.get(nextNode), steps.length - 1)
     } else {
@@ -430,6 +433,7 @@ export function buildRoute(
         meters,
         minutes,
         d: pathToD(points),
+        points: [...points],
       })
     }
     node = nextNode

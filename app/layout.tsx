@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Umbra — walk in the shade',
+  title: 'Travelero',
   description:
     'Shade-first walking navigation for extreme UV cities. Find the most covered route, not the fastest one.',
   generator: 'v0.app',
