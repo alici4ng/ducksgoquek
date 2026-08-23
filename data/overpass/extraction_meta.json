@@ -1,0 +1,10 @@
+{
+  "extracted_at_utc": "2026-08-23T04:34:51+00:00",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "query": "[out:json][timeout:60];\n(\n  way[\"highway\"~\"footway|path|pedestrian|steps|corridor|living_street\"]\n     (3.063,101.599,3.075,101.610);\n  way[\"highway\"][\"sidewalk\"]\n     (3.063,101.599,3.075,101.610);\n  way[\"covered\"]\n     (3.063,101.599,3.075,101.610);\n);\nout body;\n>;\nout skel qt;",
+  "bbox_south_west_north_east": "3.063,101.599,3.075,101.610",
+  "element_count": 785,
+  "way_count": 165,
+  "node_count": 620,
+  "raw_cache": "data/overpass/overpass_response.json"
+}

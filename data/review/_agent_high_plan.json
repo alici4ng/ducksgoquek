@@ -1,0 +1,437 @@
+{
+ "plan": {
+  "G001_151209905": [
+   [
+    410118,
+    257665
+   ],
+   [
+    410118,
+    257664
+   ]
+  ],
+  "G007_210994295": [
+   [
+    410117,
+    257674
+   ],
+   [
+    410117,
+    257675
+   ],
+   [
+    410116,
+    257674
+   ]
+  ],
+  "G010_211071568": [
+   [
+    410120,
+    257671
+   ],
+   [
+    410121,
+    257672
+   ],
+   [
+    410119,
+    257670
+   ],
+   [
+    410118,
+    257669
+   ]
+  ],
+  "G021_263461645": [
+   [
+    410118,
+    257665
+   ]
+  ],
+  "G041_820509852": [
+   [
+    410120,
+    257676
+   ],
+   [
+    410124,
+    257676
+   ],
+   [
+    410123,
+    257676
+   ],
+   [
+    410122,
+    257676
+   ],
+   [
+    410121,
+    257676
+   ],
+   [
+    410119,
+    257676
+   ],
+   [
+    410118,
+    257676
+   ],
+   [
+    410118,
+    257675
+   ],
+   [
+    410117,
+    257675
+   ]
+  ],
+  "G053_1120344217": [
+   [
+    410116,
+    257674
+   ]
+  ],
+  "G057_1232335176": [
+   [
+    410116,
+    257674
+   ]
+  ],
+  "G061_1234667533": [
+   [
+    410115,
+    257673
+   ],
+   [
+    410114,
+    257673
+   ]
+  ],
+  "G062_1234667534": [
+   [
+    410116,
+    257673
+   ],
+   [
+    410115,
+    257673
+   ]
+  ],
+  "G075_1303647089": [
+   [
+    410116,
+    257668
+   ],
+   [
+    410117,
+    257669
+   ],
+   [
+    410117,
+    257668
+   ]
+  ],
+  "G076_1303647090": [
+   [
+    410117,
+    257669
+   ],
+   [
+    410117,
+    257670
+   ]
+  ],
+  "G078_1303647092": [
+   [
+    410118,
+    257665
+   ]
+  ],
+  "G080_1303647094": [
+   [
+    410117,
+    257668
+   ],
+   [
+    410117,
+    257669
+   ]
+  ],
+  "G081_1303647095": [
+   [
+    410117,
+    257669
+   ]
+  ],
+  "G083_1303647097": [
+   [
+    410117,
+    257669
+   ]
+  ],
+  "G085_1303647099": [
+   [
+    410117,
+    257669
+   ]
+  ],
+  "G086_1303647100": [
+   [
+    410117,
+    257668
+   ]
+  ],
+  "G089_1303647103": [
+   [
+    410118,
+    257669
+   ],
+   [
+    410119,
+    257669
+   ]
+  ],
+  "G094_1303647108": [
+   [
+    410117,
+    257670
+   ],
+   [
+    410117,
+    257669
+   ],
+   [
+    410118,
+    257670
+   ]
+  ],
+  "G095_1303647109": [
+   [
+    410118,
+    257670
+   ]
+  ],
+  "G098_1303809994": [
+   [
+    410117,
+    257668
+   ],
+   [
+    410118,
+    257668
+   ]
+  ],
+  "G107_1309283276": [
+   [
+    410116,
+    257666
+   ],
+   [
+    410117,
+    257665
+   ],
+   [
+    410115,
+    257666
+   ]
+  ],
+  "G112_1460003887": [
+   [
+    410117,
+    257671
+   ]
+  ],
+  "G113_1460003888": [
+   [
+    410119,
+    257676
+   ],
+   [
+    410119,
+    257677
+   ]
+  ],
+  "G114_1460003889": [
+   [
+    410117,
+    257677
+   ]
+  ],
+  "G115_1460003890": [
+   [
+    410117,
+    257677
+   ]
+  ],
+  "G116_1460003891": [
+   [
+    410116,
+    257677
+   ],
+   [
+    410117,
+    257677
+   ]
+  ],
+  "G117_1467743200": [
+   [
+    410116,
+    257673
+   ],
+   [
+    410117,
+    257673
+   ]
+  ],
+  "G119_1467785088": [
+   [
+    410121,
+    257678
+   ],
+   [
+    410120,
+    257678
+   ],
+   [
+    410122,
+    257678
+   ]
+  ],
+  "G120_1467785089": [
+   [
+    410114,
+    257675
+   ],
+   [
+    410114,
+    257672
+   ],
+   [
+    410114,
+    257673
+   ],
+   [
+    410114,
+    257674
+   ],
+   [
+    410114,
+    257676
+   ],
+   [
+    410114,
+    257677
+   ],
+   [
+    410115,
+    257677
+   ],
+   [
+    410116,
+    257677
+   ]
+  ],
+  "G121_1467785090": [
+   [
+    410116,
+    257677
+   ]
+  ],
+  "G133_1481677600": [
+   [
+    410119,
+    257676
+   ]
+  ],
+  "G136_1063221997": [
+   [
+    410122,
+    257677
+   ]
+  ],
+  "G136_1063221998": [
+   [
+    410122,
+    257677
+   ]
+  ],
+  "G136_1303647085": [
+   [
+    410120,
+    257665
+   ],
+   [
+    410120,
+    257666
+   ]
+  ],
+  "G136_1303647107": [
+   [
+    410120,
+    257669
+   ],
+   [
+    410121,
+    257669
+   ]
+  ],
+  "G136_1467785091": [
+   [
+    410114,
+    257673
+   ]
+  ]
+ },
+ "tile_urls": {
+  "410118,257665": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410118",
+  "410118,257664": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257664/410118",
+  "410117,257674": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410117",
+  "410117,257675": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410117",
+  "410116,257674": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410116",
+  "410120,257671": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257671/410120",
+  "410121,257672": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257672/410121",
+  "410119,257670": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410119",
+  "410118,257669": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410118",
+  "410120,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410120",
+  "410124,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410124",
+  "410123,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410123",
+  "410122,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410122",
+  "410121,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410121",
+  "410119,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410119",
+  "410118,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410118",
+  "410118,257675": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410118",
+  "410115,257673": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410115",
+  "410114,257673": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410114",
+  "410116,257673": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410116",
+  "410116,257668": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410116",
+  "410117,257669": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410117",
+  "410117,257668": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410117",
+  "410117,257670": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410117",
+  "410119,257669": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410119",
+  "410118,257670": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410118",
+  "410118,257668": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410118",
+  "410116,257666": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410116",
+  "410117,257665": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410117",
+  "410115,257666": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410115",
+  "410117,257671": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257671/410117",
+  "410119,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410119",
+  "410117,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410117",
+  "410116,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410116",
+  "410117,257673": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410117",
+  "410121,257678": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410121",
+  "410120,257678": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410120",
+  "410122,257678": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410122",
+  "410114,257675": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410114",
+  "410114,257672": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257672/410114",
+  "410114,257674": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410114",
+  "410114,257676": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410114",
+  "410114,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410114",
+  "410115,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410115",
+  "410122,257677": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410122",
+  "410120,257665": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410120",
+  "410120,257666": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410120",
+  "410120,257669": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410120",
+  "410121,257669": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410121"
+ }
+}

@@ -1,0 +1,166 @@
+osm_way_id,highway,footway,sidewalk,corridor,tunnel,indoor,layer,bridge,covered,length_m,status,reason
+151209905,footway,,,,,,1,yes,,67.45,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+151209906,footway,sidewalk,,,,,,,,9.06,missing,no covered tag and no implicit cover signal
+151224274,steps,,,,,,,,,15.07,missing,no covered tag and no implicit cover signal
+210983319,footway,,,,,,,,,951.72,missing,no covered tag and no implicit cover signal
+210994197,footway,,,,,,1,yes,yes,361.6,existing_explicit,covered=yes is an explicit built-cover value
+210994209,,,,,,,,,no,140.98,existing_explicit,covered=no is an explicit built-cover value
+210994244,secondary_link,,both,,,,,,,32.6,missing,no covered tag and no implicit cover signal
+210994261,footway,,,,,,,,,103.24,missing,no covered tag and no implicit cover signal
+210994295,service,,right,,,,,,,138.07,missing,no covered tag and no implicit cover signal
+210994303,footway,,,,,,,,,83.53,missing,no covered tag and no implicit cover signal
+210994304,secondary_link,,both,,,,,,,30.43,missing,no covered tag and no implicit cover signal
+211071568,footway,,,,,,1,yes,,386.66,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+221195953,footway,,,,,,,,,15.75,missing,no covered tag and no implicit cover signal
+221195960,footway,,,,,,,,,3.28,missing,no covered tag and no implicit cover signal
+221195963,footway,,,,,,1,yes,,6.56,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+221195964,footway,,,,,,,,,18.12,missing,no covered tag and no implicit cover signal
+221195967,footway,,,,,,,,,14.18,missing,no covered tag and no implicit cover signal
+221195969,footway,,,,,,1,yes,,10.73,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+221195970,footway,,,,,,1,yes,,5.09,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+221195971,footway,,,,,,1,yes,,4.23,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+221195973,footway,,,,,,,,,18.01,missing,no covered tag and no implicit cover signal
+221195974,footway,,,,,,,,,29.5,missing,no covered tag and no implicit cover signal
+221197311,,,,,,,,,no,40.73,existing_explicit,covered=no is an explicit built-cover value
+221197312,,,,,,,,,no,112.61,existing_explicit,covered=no is an explicit built-cover value
+221197315,,,,,,,,,no,21.27,existing_explicit,covered=no is an explicit built-cover value
+263461643,steps,,,,,,,,yes,11.45,existing_explicit,covered=yes is an explicit built-cover value
+263461645,steps,,,,,,,,,12.85,missing,no covered tag and no implicit cover signal
+263461647,footway,,,,,,,,,54.99,missing,no covered tag and no implicit cover signal
+263461648,footway,,,,,,1,yes,,77.98,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+428126739,,,,,,,,,yes,448.35,existing_explicit,covered=yes is an explicit built-cover value
+461676067,footway,,,,,,,,,1334.11,missing,no covered tag and no implicit cover signal
+603234065,service,,,,,,,,yes,90.5,existing_explicit,covered=yes is an explicit built-cover value
+603234075,path,,,,,,,,,21.2,missing,no covered tag and no implicit cover signal
+603234076,path,,,,,,,,,24.39,missing,no covered tag and no implicit cover signal
+603814878,footway,,,,,,1,yes,yes,21.41,existing_explicit,covered=yes is an explicit built-cover value
+603814879,steps,,,,,yes,,,,39.71,implicit_review,no covered tag; possibly covered: indoor=yes
+603814881,footway,,,,,,1,yes,yes,368.66,existing_explicit,covered=yes is an explicit built-cover value
+603815893,footway,,,,,,1,yes,yes,27.76,existing_explicit,covered=yes is an explicit built-cover value
+603815894,steps,,,,,yes,,,,6.48,implicit_review,no covered tag; possibly covered: indoor=yes
+603815895,footway,,,,,,,,,18.83,missing,no covered tag and no implicit cover signal
+603816937,footway,,,,,,,,,10.11,missing,no covered tag and no implicit cover signal
+603816938,steps,,,,,,,,,20.29,missing,no covered tag and no implicit cover signal
+764530864,footway,,,,,,,,,37.1,missing,no covered tag and no implicit cover signal
+764530865,footway,,,,building_passage,,1,yes,,136.58,implicit_review,"no covered tag; possibly covered: tunnel=building_passage, layer=1, bridge=yes"
+764530866,footway,,,,,,1,yes,,96.28,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+775140679,footway,,,,,,-1,,,122.99,missing,no covered tag and no implicit cover signal
+775140680,footway,,,,,,2,,,55.94,implicit_review,no covered tag; possibly covered: layer=2
+776301354,steps,,,,,,,,,29.32,missing,no covered tag and no implicit cover signal
+776301355,steps,,,,,,,,,13.32,missing,no covered tag and no implicit cover signal
+776301356,footway,,,,,,1,yes,,48.96,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+777826792,footway,,,,,,,,,85.25,missing,no covered tag and no implicit cover signal
+820509852,footway,,,,,,1,yes,,553.45,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+919064543,service,,,,,,,,yes,35.12,existing_explicit,covered=yes is an explicit built-cover value
+921167830,footway,,,,,,,,,110.27,missing,no covered tag and no implicit cover signal
+921167831,footway,,,,,,,,,539.17,missing,no covered tag and no implicit cover signal
+930746843,footway,,,,,,,,,695.38,missing,no covered tag and no implicit cover signal
+931278406,footway,,,,,,,,,85.25,missing,no covered tag and no implicit cover signal
+991986584,living_street,,,,,,0,,,522.56,missing,no covered tag and no implicit cover signal
+992117732,living_street,,,,,,,,,9.42,missing,no covered tag and no implicit cover signal
+999073853,footway,sidewalk,,,,,,,,30.63,missing,no covered tag and no implicit cover signal
+999209165,footway,,,,,,1,yes,,217.79,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1063221996,footway,,,,,,1,yes,,53.51,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1063221997,steps,,,,,,,,,14.82,missing,no covered tag and no implicit cover signal
+1063221998,footway,,,,,,,,,9.31,missing,no covered tag and no implicit cover signal
+1073608495,footway,,,,,,1,yes,yes,35.11,existing_explicit,covered=yes is an explicit built-cover value
+1120344214,footway,,,,,,1,yes,yes,30.38,existing_explicit,covered=yes is an explicit built-cover value
+1120344215,footway,,,,,,1,yes,yes,25.97,existing_explicit,covered=yes is an explicit built-cover value
+1120344216,footway,,,,,,1,yes,yes,4.23,existing_explicit,covered=yes is an explicit built-cover value
+1120344217,steps,,,,,,,,,9.07,missing,no covered tag and no implicit cover signal
+1230756957,footway,,,,,,,,,33.39,missing,no covered tag and no implicit cover signal
+1230756958,footway,,,,,,1,,,37.99,implicit_review,no covered tag; possibly covered: layer=1
+1230756959,footway,,,,,,1,yes,,533.4,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1232335176,footway,,,,,,,yes,,25.65,implicit_review,no covered tag; possibly covered: bridge=yes
+1232335177,footway,,,,,yes,,,,38.27,implicit_review,no covered tag; possibly covered: indoor=yes
+1232335178,steps,,,,,,,,,34.24,missing,no covered tag and no implicit cover signal
+1232335179,footway,,,,,yes,1,yes,,38.76,implicit_review,"no covered tag; possibly covered: indoor=yes, layer=1, bridge=yes"
+1234667533,footway,,,,,,,,,90.93,missing,no covered tag and no implicit cover signal
+1234667534,footway,,,,,,1,,,45.19,implicit_review,no covered tag; possibly covered: layer=1
+1234667535,footway,,,,,,,,,27.13,missing,no covered tag and no implicit cover signal
+1234675857,steps,,,,,,,,yes,11.15,existing_explicit,covered=yes is an explicit built-cover value
+1234675858,footway,,,,,,1,yes,yes,71.77,existing_explicit,covered=yes is an explicit built-cover value
+1249942558,footway,,,,,,,,,92.59,missing,no covered tag and no implicit cover signal
+1277836491,footway,,,,,,,,yes,127.58,existing_explicit,covered=yes is an explicit built-cover value
+1303647076,corridor,,,,,yes,,,,319.34,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647077,corridor,,,,,yes,,,,232.2,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647078,corridor,,,,,yes,,,,60.23,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647079,corridor,,,,,yes,-1,,,262.16,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647080,corridor,,,,,yes,,,,186.15,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647081,corridor,,,,,yes,,,,45.46,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647082,corridor,,,,,yes,,,,32.98,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647083,corridor,,,,,yes,,,,100.62,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647084,corridor,,,,,yes,,,,18.84,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647085,footway,crossing,,,,,,,,20.42,missing,no covered tag and no implicit cover signal
+1303647086,corridor,,,,,yes,,,,5.02,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647087,corridor,,,,,yes,,,,28.78,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647088,corridor,,,,,yes,,,,34.2,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647089,footway,,,,,,,,,121.3,missing,no covered tag and no implicit cover signal
+1303647090,footway,,,,,,,,,44.29,missing,no covered tag and no implicit cover signal
+1303647091,corridor,,,,,yes,,,,131.56,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647092,footway,,,,,,,,,6.37,missing,no covered tag and no implicit cover signal
+1303647093,corridor,,,,,yes,,,,6.88,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647094,footway,,,,,,,,,24.85,missing,no covered tag and no implicit cover signal
+1303647095,footway,,,,,,,,,33.42,missing,no covered tag and no implicit cover signal
+1303647096,corridor,,,,,yes,,,,13.78,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647097,footway,,,,,,,,,38.04,missing,no covered tag and no implicit cover signal
+1303647098,corridor,,,,,yes,,,,15.34,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647099,footway,,,,,,,,,2.86,missing,no covered tag and no implicit cover signal
+1303647100,footway,,,,,,,,,5.66,missing,no covered tag and no implicit cover signal
+1303647101,corridor,,,,,yes,,,,19.85,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647102,corridor,,,,,yes,,,,33.43,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647103,footway,,,,,,,,,32.29,missing,no covered tag and no implicit cover signal
+1303647104,corridor,,,,,yes,,,,25.88,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647105,footway,,,,,,,,,68.4,missing,no covered tag and no implicit cover signal
+1303647106,corridor,,,,,yes,,,,16.74,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303647107,footway,,,,,,,,,39.93,missing,no covered tag and no implicit cover signal
+1303647108,steps,,,,,,,,,54.33,missing,no covered tag and no implicit cover signal
+1303647109,steps,,,,,,,,,13.15,missing,no covered tag and no implicit cover signal
+1303647110,corridor,,,,,yes,,,,9.54,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303809993,corridor,,,,,yes,,,,55.94,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303809994,footway,crossing,,,,,,,,22.84,missing,no covered tag and no implicit cover signal
+1303809995,corridor,,,,,yes,,,,47.41,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303809996,corridor,,,,,yes,,,,4.08,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303809997,corridor,,,,,yes,,,,36.52,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303809998,footway,crossing,,,,,,,,10.49,missing,no covered tag and no implicit cover signal
+1303809999,footway,,,,,,,,,13.86,missing,no covered tag and no implicit cover signal
+1303810000,corridor,,,,,yes,,,,50.73,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1303810001,footway,,,,,,1,yes,,31.7,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1303810002,footway,,,,,,1,yes,,12.51,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1309283276,footway,sidewalk,,,,,,,,116.75,missing,no covered tag and no implicit cover signal
+1364063296,corridor,,,,,yes,,,,17.08,implicit_review,"no covered tag; possibly covered: indoor=yes, highway=corridor"
+1427875104,footway,,,,,,,,,113.26,missing,no covered tag and no implicit cover signal
+1427916322,footway,,,,,,,,,80.75,missing,no covered tag and no implicit cover signal
+1460003879,footway,,,,,,1,yes,yes,17.44,existing_explicit,covered=yes is an explicit built-cover value
+1460003881,footway,,,,,,,,,5.36,missing,no covered tag and no implicit cover signal
+1460003882,footway,,,,,,1,yes,,39.95,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1460003883,footway,,,,,,1,yes,yes,418.75,existing_explicit,covered=yes is an explicit built-cover value
+1460003884,footway,,,,,yes,,,yes,37.95,existing_explicit,covered=yes is an explicit built-cover value
+1460003885,steps,,,,,,1,yes,yes,6.84,existing_explicit,covered=yes is an explicit built-cover value
+1460003886,footway,,,,,,,,yes,24.81,existing_explicit,covered=yes is an explicit built-cover value
+1460003887,footway,,,,,,1,yes,,2.47,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1460003888,footway,,,,,,1,yes,,124.75,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1460003889,footway,,,,,,1,yes,,40.69,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1460003890,steps,,,,,,,,,14.75,missing,no covered tag and no implicit cover signal
+1460003891,footway,,,,,,,,,105.52,missing,no covered tag and no implicit cover signal
+1467743200,pedestrian,,,,,,1,yes,,44.39,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1467745041,footway,,,,,,1,yes,yes,302.09,existing_explicit,covered=yes is an explicit built-cover value
+1467745042,steps,,,,,,,,,43.29,missing,no covered tag and no implicit cover signal
+1467745043,footway,,,,building_passage,,,,,202.48,implicit_review,no covered tag; possibly covered: tunnel=building_passage
+1467745044,footway,,,,building_passage,,,,,8.79,implicit_review,no covered tag; possibly covered: tunnel=building_passage
+1467785088,footway,,,,building_passage,,,,,155.63,implicit_review,no covered tag; possibly covered: tunnel=building_passage
+1467785089,footway,sidewalk,,,,,,,,510.73,missing,no covered tag and no implicit cover signal
+1467785090,footway,crossing,,,,,,,,33.23,missing,no covered tag and no implicit cover signal
+1467785091,footway,,,,,,,,,10.31,missing,no covered tag and no implicit cover signal
+1469997594,steps,,,,,,,,,16.18,missing,no covered tag and no implicit cover signal
+1469997595,footway,,,,,,,,,1.78,missing,no covered tag and no implicit cover signal
+1469997596,steps,,,,,,,,,14.47,missing,no covered tag and no implicit cover signal
+1469997597,steps,,,,,,,,,18.93,missing,no covered tag and no implicit cover signal
+1469997598,footway,,,,,,,,,3.54,missing,no covered tag and no implicit cover signal
+1469997599,steps,,,,,,,,,15.04,missing,no covered tag and no implicit cover signal
+1469997600,footway,,,,,,,,,5.75,missing,no covered tag and no implicit cover signal
+1469997601,footway,sidewalk,,,,,,,,242.99,missing,no covered tag and no implicit cover signal
+1469997607,footway,,,,,,1,yes,,51.04,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1469997608,footway,,,,,,1,yes,,49.28,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1481677600,footway,,,,,,1,yes,,39.57,implicit_review,"no covered tag; possibly covered: layer=1, bridge=yes"
+1511509679,footway,,,,,,,,,30.2,missing,no covered tag and no implicit cover signal

@@ -1,0 +1,526 @@
+[
+ {
+  "tile": [
+   410108,
+   257678
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410108",
+  "ways": [
+   {
+    "review_id": "G006",
+    "osm_way_id": 210994261
+   },
+   {
+    "review_id": "G008",
+    "osm_way_id": 210994303
+   }
+  ]
+ },
+ {
+  "tile": [
+   410109,
+   257678
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410109",
+  "ways": [
+   {
+    "review_id": "G006",
+    "osm_way_id": 210994261
+   },
+   {
+    "review_id": "G008",
+    "osm_way_id": 210994303
+   }
+  ]
+ },
+ {
+  "tile": [
+   410109,
+   257679
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257679/410109",
+  "ways": [
+   {
+    "review_id": "G008",
+    "osm_way_id": 210994303
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257663
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257663/410122",
+  "ways": [
+   {
+    "review_id": "G040",
+    "osm_way_id": 777826792
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257662
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257662/410122",
+  "ways": [
+   {
+    "review_id": "G040",
+    "osm_way_id": 777826792
+   }
+  ]
+ },
+ {
+  "tile": [
+   410121,
+   257669
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410121",
+  "ways": [
+   {
+    "review_id": "G042",
+    "osm_way_id": 921167830
+   },
+   {
+    "review_id": "G136",
+    "osm_way_id": 1303647107
+   }
+  ]
+ },
+ {
+  "tile": [
+   410121,
+   257670
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410121",
+  "ways": [
+   {
+    "review_id": "G042",
+    "osm_way_id": 921167830
+   }
+  ]
+ },
+ {
+  "tile": [
+   410120,
+   257662
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257662/410120",
+  "ways": [
+   {
+    "review_id": "G045",
+    "osm_way_id": 931278406
+   }
+  ]
+ },
+ {
+  "tile": [
+   410120,
+   257663
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257663/410120",
+  "ways": [
+   {
+    "review_id": "G045",
+    "osm_way_id": 931278406
+   }
+  ]
+ },
+ {
+  "tile": [
+   410123,
+   257680
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257680/410123",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 992117732
+   }
+  ]
+ },
+ {
+  "tile": [
+   410123,
+   257679
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257679/410123",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1232335178
+   }
+  ]
+ },
+ {
+  "tile": [
+   410124,
+   257679
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257679/410124",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   }
+  ]
+ },
+ {
+  "tile": [
+   410124,
+   257680
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257680/410124",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   }
+  ]
+ },
+ {
+  "tile": [
+   410124,
+   257681
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257681/410124",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   }
+  ]
+ },
+ {
+  "tile": [
+   410123,
+   257681
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257681/410123",
+  "ways": [
+   {
+    "review_id": "G046",
+    "osm_way_id": 991986584
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257665
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410122",
+  "ways": [
+   {
+    "review_id": "G110",
+    "osm_way_id": 1427916322
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 263461647
+   }
+  ]
+ },
+ {
+  "tile": [
+   410121,
+   257665
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410121",
+  "ways": [
+   {
+    "review_id": "G110",
+    "osm_way_id": 1427916322
+   }
+  ]
+ },
+ {
+  "tile": [
+   410111,
+   257677
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410111",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 210994244
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 210994304
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997594
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997596
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997597
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997598
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997599
+   }
+  ]
+ },
+ {
+  "tile": [
+   410112,
+   257677
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410112",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997594
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997595
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997596
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997597
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997599
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1469997600
+   }
+  ]
+ },
+ {
+  "tile": [
+   410123,
+   257668
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410123",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195953
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195964
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195967
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195973
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195974
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257667
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257667/410122",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 1303809998
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 1303809999
+   }
+  ]
+ },
+ {
+  "tile": [
+   410110,
+   257666
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410110",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 776301354
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 776301355
+   }
+  ]
+ },
+ {
+  "tile": [
+   410116,
+   257680
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257680/410116",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 1234667535
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257674
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410122",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 1230756957
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257677
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410122",
+  "ways": [
+   {
+    "review_id": "G136",
+    "osm_way_id": 1063221997
+   },
+   {
+    "review_id": "G136",
+    "osm_way_id": 1063221998
+   }
+  ]
+ },
+ {
+  "tile": [
+   410120,
+   257665
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410120",
+  "ways": [
+   {
+    "review_id": "G136",
+    "osm_way_id": 1303647085
+   }
+  ]
+ },
+ {
+  "tile": [
+   410120,
+   257669
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410120",
+  "ways": [
+   {
+    "review_id": "G136",
+    "osm_way_id": 1303647107
+   }
+  ]
+ },
+ {
+  "tile": [
+   410114,
+   257673
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410114",
+  "ways": [
+   {
+    "review_id": "G136",
+    "osm_way_id": 1467785091
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257664
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257664/410122",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 151224274
+   }
+  ]
+ },
+ {
+  "tile": [
+   410122,
+   257666
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410122",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 603815895
+   }
+  ]
+ },
+ {
+  "tile": [
+   410111,
+   257678
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410111",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 210994244
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 210994304
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 764530864
+   }
+  ]
+ },
+ {
+  "tile": [
+   410124,
+   257668
+  ],
+  "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410124",
+  "ways": [
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195960
+   },
+   {
+    "review_id": "G135",
+    "osm_way_id": 221195973
+   }
+  ]
+ }
+]

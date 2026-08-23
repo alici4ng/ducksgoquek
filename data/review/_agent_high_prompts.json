@@ -1,0 +1,581 @@
+[
+ {
+  "key": "G001_151209905",
+  "review_id": "G001",
+  "way": 151209905,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410118_257665.jpg",
+  "px": 146,
+  "py": 40,
+  "orientation": "S",
+  "length": 67.5,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near top of tile (pixel ~(146,40) of the 256x256 tile), running roughly S-ward, about 68 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G007_210994295",
+  "review_id": "G007",
+  "way": 210994295,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257674.jpg",
+  "px": 24,
+  "py": 243,
+  "orientation": "NW",
+  "length": 138.1,
+  "elevated": false,
+  "tags": {
+   "highway": "service",
+   "sidewalk": "right"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level service segment near bottom-left of tile (pixel ~(24,243) of the 256x256 tile), running roughly NW-ward, about 138 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G010_211071568",
+  "review_id": "G010",
+  "way": 211071568,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410120_257671.jpg",
+  "px": 65,
+  "py": 140,
+  "orientation": "NW",
+  "length": 386.7,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near left of tile (pixel ~(65,140) of the 256x256 tile), running roughly NW-ward, about 387 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G021_263461645",
+  "review_id": "G021",
+  "way": 263461645,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410118_257665.jpg",
+  "px": 147,
+  "py": 149,
+  "orientation": "SW",
+  "length": 12.8,
+  "elevated": false,
+  "tags": {
+   "highway": "steps"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level steps segment near center of tile (pixel ~(147,149) of the 256x256 tile), running roughly SW-ward, about 13 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G041_820509852",
+  "review_id": "G041",
+  "way": 820509852,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410120_257676.jpg",
+  "px": 154,
+  "py": 45,
+  "orientation": "W",
+  "length": 553.5,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near top of tile (pixel ~(154,45) of the 256x256 tile), running roughly W-ward, about 554 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G053_1120344217",
+  "review_id": "G053",
+  "way": 1120344217,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257674.jpg",
+  "px": 80,
+  "py": 42,
+  "orientation": "W",
+  "length": 9.1,
+  "elevated": false,
+  "tags": {
+   "highway": "steps"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level steps segment near top-left of tile (pixel ~(80,42) of the 256x256 tile), running roughly W-ward, about 9 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G057_1232335176",
+  "review_id": "G057",
+  "way": 1232335176,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257674.jpg",
+  "px": 114,
+  "py": 92,
+  "orientation": "NW",
+  "length": 25.6,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near center of tile (pixel ~(114,92) of the 256x256 tile), running roughly NW-ward, about 26 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G061_1234667533",
+  "review_id": "G061",
+  "way": 1234667533,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410115_257673.jpg",
+  "px": 95,
+  "py": 57,
+  "orientation": "W",
+  "length": 90.9,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top of tile (pixel ~(95,57) of the 256x256 tile), running roughly W-ward, about 91 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G062_1234667534",
+  "review_id": "G062",
+  "way": 1234667534,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257673.jpg",
+  "px": 65,
+  "py": 61,
+  "orientation": "W",
+  "length": 45.2,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near top-left of tile (pixel ~(65,61) of the 256x256 tile), running roughly W-ward, about 45 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G075_1303647089",
+  "review_id": "G075",
+  "way": 1303647089,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257668.jpg",
+  "px": 176,
+  "py": 175,
+  "orientation": "NW",
+  "length": 121.3,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom-right of tile (pixel ~(176,175) of the 256x256 tile), running roughly NW-ward, about 121 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G076_1303647090",
+  "review_id": "G076",
+  "way": 1303647090,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257669.jpg",
+  "px": 186,
+  "py": 242,
+  "orientation": "SW",
+  "length": 44.3,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom-right of tile (pixel ~(186,242) of the 256x256 tile), running roughly SW-ward, about 44 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G078_1303647092",
+  "review_id": "G078",
+  "way": 1303647092,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410118_257665.jpg",
+  "px": 89,
+  "py": 233,
+  "orientation": "N",
+  "length": 6.4,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom of tile (pixel ~(89,233) of the 256x256 tile), running roughly N-ward, about 6 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G080_1303647094",
+  "review_id": "G080",
+  "way": 1303647094,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257668.jpg",
+  "px": 147,
+  "py": 251,
+  "orientation": "SW",
+  "length": 24.9,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom of tile (pixel ~(147,251) of the 256x256 tile), running roughly SW-ward, about 25 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G081_1303647095",
+  "review_id": "G081",
+  "way": 1303647095,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257669.jpg",
+  "px": 128,
+  "py": 34,
+  "orientation": "SE",
+  "length": 33.4,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top of tile (pixel ~(128,34) of the 256x256 tile), running roughly SE-ward, about 33 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G083_1303647097",
+  "review_id": "G083",
+  "way": 1303647097,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257669.jpg",
+  "px": 239,
+  "py": 149,
+  "orientation": "S",
+  "length": 38.0,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near right of tile (pixel ~(239,149) of the 256x256 tile), running roughly S-ward, about 38 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G085_1303647099",
+  "review_id": "G085",
+  "way": 1303647099,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257669.jpg",
+  "px": 228,
+  "py": 202,
+  "orientation": "NW",
+  "length": 2.9,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom-right of tile (pixel ~(228,202) of the 256x256 tile), running roughly NW-ward, about 3 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G086_1303647100",
+  "review_id": "G086",
+  "way": 1303647100,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257668.jpg",
+  "px": 110,
+  "py": 156,
+  "orientation": "S",
+  "length": 5.7,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near center of tile (pixel ~(110,156) of the 256x256 tile), running roughly S-ward, about 6 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G089_1303647103",
+  "review_id": "G089",
+  "way": 1303647103,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410118_257669.jpg",
+  "px": 237,
+  "py": 187,
+  "orientation": "E",
+  "length": 32.3,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near bottom-right of tile (pixel ~(237,187) of the 256x256 tile), running roughly E-ward, about 32 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G094_1303647108",
+  "review_id": "G094",
+  "way": 1303647108,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257670.jpg",
+  "px": 249,
+  "py": 15,
+  "orientation": "SE",
+  "length": 54.3,
+  "elevated": false,
+  "tags": {
+   "highway": "steps"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level steps segment near top-right of tile (pixel ~(249,15) of the 256x256 tile), running roughly SE-ward, about 54 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G095_1303647109",
+  "review_id": "G095",
+  "way": 1303647109,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410118_257670.jpg",
+  "px": 117,
+  "py": 77,
+  "orientation": "E",
+  "length": 13.2,
+  "elevated": false,
+  "tags": {
+   "highway": "steps"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level steps segment near top of tile (pixel ~(117,77) of the 256x256 tile), running roughly E-ward, about 13 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G098_1303809994",
+  "review_id": "G098",
+  "way": 1303809994,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257668.jpg",
+  "px": 219,
+  "py": 67,
+  "orientation": "E",
+  "length": 22.8,
+  "elevated": false,
+  "tags": {
+   "highway": "footway",
+   "footway": "crossing"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top-right of tile (pixel ~(219,67) of the 256x256 tile), running roughly E-ward, about 23 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G107_1309283276",
+  "review_id": "G107",
+  "way": 1309283276,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257666.jpg",
+  "px": 78,
+  "py": 13,
+  "orientation": "W",
+  "length": 116.8,
+  "elevated": false,
+  "tags": {
+   "highway": "footway",
+   "footway": "sidewalk"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top-left of tile (pixel ~(78,13) of the 256x256 tile), running roughly W-ward, about 117 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G112_1460003887",
+  "review_id": "G112",
+  "way": 1460003887,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257671.jpg",
+  "px": 51,
+  "py": 213,
+  "orientation": "W",
+  "length": 2.5,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near bottom-left of tile (pixel ~(51,213) of the 256x256 tile), running roughly W-ward, about 2 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G113_1460003888",
+  "review_id": "G113",
+  "way": 1460003888,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410119_257676.jpg",
+  "px": 66,
+  "py": 233,
+  "orientation": "S",
+  "length": 124.8,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near bottom-left of tile (pixel ~(66,233) of the 256x256 tile), running roughly S-ward, about 125 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G114_1460003889",
+  "review_id": "G114",
+  "way": 1460003889,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257677.jpg",
+  "px": 64,
+  "py": 154,
+  "orientation": "N",
+  "length": 40.7,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near left of tile (pixel ~(64,154) of the 256x256 tile), running roughly N-ward, about 41 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G115_1460003890",
+  "review_id": "G115",
+  "way": 1460003890,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410117_257677.jpg",
+  "px": 97,
+  "py": 81,
+  "orientation": "E",
+  "length": 14.8,
+  "elevated": false,
+  "tags": {
+   "highway": "steps"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level steps segment near top of tile (pixel ~(97,81) of the 256x256 tile), running roughly E-ward, about 15 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G116_1460003891",
+  "review_id": "G116",
+  "way": 1460003891,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257677.jpg",
+  "px": 239,
+  "py": 72,
+  "orientation": "E",
+  "length": 105.5,
+  "elevated": false,
+  "tags": {
+   "highway": "footway"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top-right of tile (pixel ~(239,72) of the 256x256 tile), running roughly E-ward, about 106 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G117_1467743200",
+  "review_id": "G117",
+  "way": 1467743200,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257673.jpg",
+  "px": 217,
+  "py": 95,
+  "orientation": "E",
+  "length": 44.4,
+  "elevated": true,
+  "tags": {
+   "highway": "pedestrian",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near right of tile (pixel ~(217,95) of the 256x256 tile), running roughly E-ward, about 44 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G119_1467785088",
+  "review_id": "G119",
+  "way": 1467785088,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410121_257678.jpg",
+  "px": 83,
+  "py": 64,
+  "orientation": "E",
+  "length": 155.6,
+  "elevated": false,
+  "tags": {
+   "highway": "footway",
+   "tunnel": "building_passage"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near top-left of tile (pixel ~(83,64) of the 256x256 tile), running roughly E-ward, about 156 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G120_1467785089",
+  "review_id": "G120",
+  "way": 1467785089,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410114_257675.jpg",
+  "px": 187,
+  "py": 146,
+  "orientation": "S",
+  "length": 510.7,
+  "elevated": false,
+  "tags": {
+   "highway": "footway",
+   "footway": "sidewalk"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near right of tile (pixel ~(187,146) of the 256x256 tile), running roughly S-ward, about 511 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G121_1467785090",
+  "review_id": "G121",
+  "way": 1467785090,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410116_257677.jpg",
+  "px": 71,
+  "py": 95,
+  "orientation": "E",
+  "length": 33.2,
+  "elevated": false,
+  "tags": {
+   "highway": "footway",
+   "footway": "crossing"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level footway segment near left of tile (pixel ~(71,95) of the 256x256 tile), running roughly E-ward, about 33 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G133_1481677600",
+  "review_id": "G133",
+  "way": 1481677600,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410119_257676.jpg",
+  "px": 143,
+  "py": 171,
+  "orientation": "E",
+  "length": 39.6,
+  "elevated": true,
+  "tags": {
+   "highway": "footway",
+   "layer": "1",
+   "bridge": "yes"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ELEVATED walkway/bridge segment near bottom of tile (pixel ~(143,171) of the 256x256 tile), running roughly E-ward, about 40 m long. Is there a CONTINUOUS light-toned ROOF band over the walkway deck (roofed covered linkway), or is it an open deck with no built overhead cover? Look for a uniform light/grey roof surface with straight edges along the full segment vs a dark/narrow open deck. Report: roofed continuous / open / partially roofed (say where) / cannot tell, and what you see."
+ },
+ {
+  "key": "G136_1063221997",
+  "review_id": "G136",
+  "way": 1063221997,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410122_257677.jpg",
+  "px": 53,
+  "py": 62,
+  "orientation": "E",
+  "length": 94.7,
+  "elevated": false,
+  "tags": {
+   "_note": "batch of clearly ground-level open ways"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level way segment near top-left of tile (pixel ~(53,62) of the 256x256 tile), running roughly E-ward, about 95 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G136_1063221998",
+  "review_id": "G136",
+  "way": 1063221998,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410122_257677.jpg",
+  "px": 29,
+  "py": 78,
+  "orientation": "S",
+  "length": 94.7,
+  "elevated": false,
+  "tags": {
+   "_note": "batch of clearly ground-level open ways"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level way segment near top-left of tile (pixel ~(29,78) of the 256x256 tile), running roughly S-ward, about 95 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G136_1303647085",
+  "review_id": "G136",
+  "way": 1303647085,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410120_257665.jpg",
+  "px": 191,
+  "py": 235,
+  "orientation": "S",
+  "length": 94.7,
+  "elevated": false,
+  "tags": {
+   "_note": "batch of clearly ground-level open ways"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level way segment near bottom-right of tile (pixel ~(191,235) of the 256x256 tile), running roughly S-ward, about 95 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G136_1303647107",
+  "review_id": "G136",
+  "way": 1303647107,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410120_257669.jpg",
+  "px": 215,
+  "py": 182,
+  "orientation": "E",
+  "length": 94.7,
+  "elevated": false,
+  "tags": {
+   "_note": "batch of clearly ground-level open ways"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level way segment near bottom-right of tile (pixel ~(215,182) of the 256x256 tile), running roughly E-ward, about 95 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ },
+ {
+  "key": "G136_1467785091",
+  "review_id": "G136",
+  "way": 1467785091,
+  "tile": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\z19_410114_257673.jpg",
+  "px": 181,
+  "py": 55,
+  "orientation": "W",
+  "length": 94.7,
+  "elevated": false,
+  "tags": {
+   "_note": "batch of clearly ground-level open ways"
+  },
+  "question": "This is a zoom-19 satellite tile. Look at the ground-level way segment near top-right of tile (pixel ~(181,55) of the 256x256 tile), running roughly W-ward, about 95 m long. Is there any BUILT overhead cover (canopy structure, arcade, building overhang, roof) over the walkway, or is it open pavement/path open to the sky? Tree canopy does NOT count as cover. Report: covered by built structure / open to sky / partially covered (say where) / cannot tell, and describe what you see at that spot."
+ }
+]

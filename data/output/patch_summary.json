@@ -1,0 +1,515 @@
+{
+  "stats": {
+    "osm_existing": 25,
+    "hermes_review": 34,
+    "boundary_inference": 4
+  },
+  "feature_count": 63,
+  "patch_rows": [
+    {
+      "feature_id": "210994197",
+      "osm_way_id": "210994197",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "210994209",
+      "osm_way_id": "210994209",
+      "covered": "no",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "221197311",
+      "osm_way_id": "221197311",
+      "covered": "no",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "221197312",
+      "osm_way_id": "221197312",
+      "covered": "no",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "221197315",
+      "osm_way_id": "221197315",
+      "covered": "no",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "263461643",
+      "osm_way_id": "263461643",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "428126739",
+      "osm_way_id": "428126739",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603234065",
+      "osm_way_id": "603234065",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603814878",
+      "osm_way_id": "603814878",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603814879",
+      "osm_way_id": "603814879",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G027",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603814881",
+      "osm_way_id": "603814881",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603815893",
+      "osm_way_id": "603815893",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "603815894",
+      "osm_way_id": "603815894",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G028",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "764530865",
+      "osm_way_id": "764530865",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G033",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "919064543",
+      "osm_way_id": "919064543",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1073608495",
+      "osm_way_id": "1073608495",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1120344214",
+      "osm_way_id": "1120344214",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1120344215",
+      "osm_way_id": "1120344215",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1120344216",
+      "osm_way_id": "1120344216",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1232335177",
+      "osm_way_id": "1232335177",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G058",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1232335179",
+      "osm_way_id": "1232335179",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G060",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1234675857",
+      "osm_way_id": "1234675857",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1234675858",
+      "osm_way_id": "1234675858",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1277836491",
+      "osm_way_id": "1277836491",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647076",
+      "osm_way_id": "1303647076",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G065",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647077",
+      "osm_way_id": "1303647077",
+      "covered": "yes",
+      "coverage_source": "boundary_inference",
+      "review_id": "BOUNDARY-BULK",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647078",
+      "osm_way_id": "1303647078",
+      "covered": "yes",
+      "coverage_source": "boundary_inference",
+      "review_id": "BOUNDARY-BULK",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647079",
+      "osm_way_id": "1303647079",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G066",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647080",
+      "osm_way_id": "1303647080",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G067",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647081",
+      "osm_way_id": "1303647081",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G068",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647082",
+      "osm_way_id": "1303647082",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G069",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647083",
+      "osm_way_id": "1303647083",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "R002",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647084",
+      "osm_way_id": "1303647084",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G070",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647086",
+      "osm_way_id": "1303647086",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G072",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647087",
+      "osm_way_id": "1303647087",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G073",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647088",
+      "osm_way_id": "1303647088",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G074",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647091",
+      "osm_way_id": "1303647091",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G077",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647093",
+      "osm_way_id": "1303647093",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G079",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647096",
+      "osm_way_id": "1303647096",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G082",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647098",
+      "osm_way_id": "1303647098",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G084",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647101",
+      "osm_way_id": "1303647101",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G087",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647102",
+      "osm_way_id": "1303647102",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G088",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647104",
+      "osm_way_id": "1303647104",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G090",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647106",
+      "osm_way_id": "1303647106",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G092",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303647110",
+      "osm_way_id": "1303647110",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G096",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303809993",
+      "osm_way_id": "1303809993",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G097",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303809995",
+      "osm_way_id": "1303809995",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G099",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303809996",
+      "osm_way_id": "1303809996",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G100",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303809997",
+      "osm_way_id": "1303809997",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G101",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1303810000",
+      "osm_way_id": "1303810000",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G104",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1364063296",
+      "osm_way_id": "1364063296",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G108",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003879",
+      "osm_way_id": "1460003879",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003881",
+      "osm_way_id": "1460003881",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G111",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003882",
+      "osm_way_id": "1460003882",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "R001",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003883",
+      "osm_way_id": "1460003883",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003884",
+      "osm_way_id": "1460003884",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003885",
+      "osm_way_id": "1460003885",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1460003886",
+      "osm_way_id": "1460003886",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1467745041",
+      "osm_way_id": "1467745041",
+      "covered": "yes",
+      "coverage_source": "osm_existing",
+      "review_id": "",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1467745042",
+      "osm_way_id": "1467745042",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "G118",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1467745043",
+      "osm_way_id": "1467745043",
+      "covered": "yes",
+      "coverage_source": "boundary_inference",
+      "review_id": "BOUNDARY-BULK",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1467745044",
+      "osm_way_id": "1467745044",
+      "covered": "yes",
+      "coverage_source": "boundary_inference",
+      "review_id": "BOUNDARY-BULK",
+      "note": "single segment"
+    },
+    {
+      "feature_id": "1467785088",
+      "osm_way_id": "1467785088",
+      "covered": "yes",
+      "coverage_source": "hermes_review",
+      "review_id": "TAG-BUILDING_PASSAGE",
+      "note": "single segment"
+    }
+  ],
+  "osm_conflicts": []
+}
