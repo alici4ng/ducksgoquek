@@ -13,22 +13,33 @@ import {
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet'
-import { UV } from '@/lib/shade-map'
+import { COVERAGE_META, UV } from '@/lib/shade-map'
 import { CONDITIONS, adTriggered } from '@/lib/sponsor'
-
-const STATS = [
-  { label: 'Outdoor left', value: `${CONDITIONS.exposedMeters}`, unit: 'm' },
-  { label: 'Time exposed', value: '2', unit: 'min' },
-  { label: 'Last applied', value: '2:10', unit: 'ago' },
-]
 
 type SunscreenSheetProps = {
   open: boolean
   onOpenChange: (open: boolean) => void
+  /** Route figures, when a route is on screen behind the sheet. */
+  coverage: number | null
+  exposedMeters: number | null
 }
 
-export function SunscreenSheet({ open, onOpenChange }: SunscreenSheetProps) {
+export function SunscreenSheet({
+  open,
+  onOpenChange,
+  coverage,
+  exposedMeters,
+}: SunscreenSheetProps) {
   const showSponsor = adTriggered()
+  const exposedMinutes =
+    exposedMeters === null
+      ? null
+      : Math.round(exposedMeters / COVERAGE_META.openair.speed)
+  const stats = [
+    { label: 'Outdoor left', value: exposedMeters === null ? '—' : `${exposedMeters}`, unit: 'm' },
+    { label: 'Time exposed', value: exposedMinutes === null ? '—' : `${exposedMinutes}`, unit: 'min' },
+    { label: 'Last applied', value: '2:10', unit: 'ago' },
+  ]
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
@@ -88,7 +99,7 @@ export function SunscreenSheet({ open, onOpenChange }: SunscreenSheetProps) {
                 </span>
                 <span className="flex items-baseline gap-1.5">
                   <span className="font-mono text-xl leading-none font-semibold text-coverage-indoor-ink tabular">
-                    {CONDITIONS.coverage}%
+                    {coverage === null ? '—' : `${coverage}%`}
                   </span>
                   <span className="truncate text-[0.7rem] text-muted-foreground">
                     {CONDITIONS.tempC}°C
@@ -112,7 +123,7 @@ export function SunscreenSheet({ open, onOpenChange }: SunscreenSheetProps) {
           </p>
 
           <dl className="mx-4 mt-4 flex shrink-0 items-stretch rounded-2xl border border-border bg-background py-2.5">
-            {STATS.map((stat, index) => (
+            {stats.map((stat, index) => (
               <div
                 key={stat.label}
                 className={

@@ -1,15 +1,13 @@
-import { COVERAGE, EXPOSED_METERS, UV_INDEX } from '@/lib/shade-map'
+import { CONDITIONS_NOW, UV_INDEX } from '@/lib/shade-map'
 
 /**
- * Live conditions for the alert widget. Coverage and exposure come from the
- * planned route rather than being restated, so the widget can never disagree
+ * Live conditions for the alert widget. Anything route-specific is passed in
+ * by the caller rather than restated here, so the widget can never disagree
  * with the route sheet behind it.
  */
 export const CONDITIONS = {
   uvIndex: UV_INDEX,
-  tempC: 34,
-  coverage: COVERAGE,
-  exposedMeters: EXPOSED_METERS,
+  tempC: CONDITIONS_NOW.tempC,
 }
 
 /**
@@ -35,10 +33,10 @@ export const SPONSOR = {
   product: 'Perfect UV Milk SPF 50+',
   headline: 'UV shield station ahead',
   offer:
-    'Free sample or 20% off at the Watsons on Bonham Strand — 40m off your route.',
-  retailer: 'Watsons · Bonham Strand',
+    'Free sample or 20% off at Watsons, Sunway Pyramid LG — 40m off your route.',
+  retailer: 'Watsons · Sunway Pyramid LG',
   detourMeters: 40,
-  disclosure: 'Sponsored · LaluanKL monetization partner',
+  disclosure: 'Sponsored · Umbra monetization partner',
 }
 
 /** Shown only in the pitch-demo overlay, never to end users. */

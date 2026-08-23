@@ -4,7 +4,7 @@ import { CloudRain } from 'lucide-react'
 
 import { Badge } from '@/components/ui/badge'
 import { Switch } from '@/components/ui/switch'
-import { UV } from '@/lib/shade-map'
+import { CONDITIONS_NOW, UV } from '@/lib/shade-map'
 import { cn } from '@/lib/utils'
 
 type MapHudProps = {
@@ -67,8 +67,10 @@ export function MapHud({ rainMode, onRainModeChange, onUvPress }: MapHudProps) {
 export function StatusBar() {
   return (
     <div className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-5 pt-2 font-mono text-[0.7rem] font-medium text-foreground/70 tabular">
-      <span>13:42</span>
-      <span>34°C · feels 41°</span>
+      <span>{CONDITIONS_NOW.timeLabel}</span>
+      <span>
+        {CONDITIONS_NOW.tempC}°C · feels {CONDITIONS_NOW.feelsLikeC}°
+      </span>
     </div>
   )
 }
