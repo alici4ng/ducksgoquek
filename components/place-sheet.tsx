@@ -13,7 +13,7 @@ import {
 } from '@/components/ui/sheet'
 import { EDGES } from '@/lib/route-engine'
 import { COVERAGE_META } from '@/lib/shade-map'
-import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { placeById } from '@/lib/sunway-city'
 
 /** How this place connects to the rest of the network, by kind of cover. */
 function linksFor(node: string) {
@@ -38,7 +38,7 @@ export function PlaceSheet({
   onSetOrigin,
   onSetDestination,
 }: PlaceSheetProps) {
-  const place = placeId ? PLACE_BY_ID.get(placeId) : undefined
+  const place = placeId ? placeById(placeId) : undefined
   const Icon = place ? KIND_ICON[place.kind] : CircleDot
 
   return (

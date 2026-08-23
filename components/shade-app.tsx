@@ -4,13 +4,13 @@ import { useEffect, useMemo, useState } from 'react'
 
 import { MapSurface, type Bounds } from '@/components/map-canvas'
 import { MapHud, StatusBar } from '@/components/map-hud'
-import { PlacePicker } from '@/components/place-picker'
-import { PlaceSheet } from '@/components/place-sheet'
+import { PlacePicker, type PickedPlace } from '@/components/place-picker'
 import { PlanSheet } from '@/components/plan-sheet'
 import { RouteSheet } from '@/components/route-sheet'
 import { SunscreenSheet } from '@/components/sunscreen-sheet'
+import { makeOsmPlace } from '@/lib/osm-search'
 import { boundsOf, buildRouteSet } from '@/lib/route-engine'
-import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { placeById } from '@/lib/sunway-city'
 
 type Phase = 'plan' | 'route'
 type PickerTarget = 'origin' | 'destination' | null
@@ -31,12 +31,10 @@ export function ShadeApp() {
   const [destinationId, setDestinationId] = useState<string>('pyramid')
   const [computing, setComputing] = useState(false)
   const [rainMode, setRainMode] = useState(false)
-  const [showCoveredNetwork, setShowCoveredNetwork] = useState(true)
   const [activeStepId, setActiveStepId] = useState<string | null>(null)
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
   const [reminderOpen, setReminderOpen] = useState(false)
   const [picker, setPicker] = useState<PickerTarget>(null)
-  const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null)
   const [recents, setRecents] = useState<string[]>(['pyramid', 'monash', 'medical'])
   const [focus, setFocus] = useState<Bounds | null>(null)
 
@@ -72,7 +70,11 @@ export function ShadeApp() {
     setRecents((current) => [placeId, ...current.filter((id) => id !== placeId)].slice(0, 5))
   }
 
-  function pick(placeId: string) {
+  function pick(selection: PickedPlace) {
+    // OSM results become registered places on first use, so everything
+    // downstream — recents, markers, routing — resolves them like presets.
+    const placeId =
+      selection.source === 'osm' ? makeOsmPlace(selection.result).id : selection.id
     if (picker === 'origin') setOriginId(placeId)
     if (picker === 'destination') setDestinationId(placeId)
     remember(placeId)
@@ -83,7 +85,7 @@ export function ShadeApp() {
   }
 
   function focusPlace(placeId: string) {
-    const place = PLACE_BY_ID.get(placeId)
+    const place = placeById(placeId)
     if (!place) return
     setFocus(
       aboveSheet({
@@ -101,16 +103,9 @@ export function ShadeApp() {
         route={phase === 'route' ? route : null}
         activeStepId={activeStepId}
         rainMode={rainMode}
-        showCoveredNetwork={showCoveredNetwork}
         originId={originId}
         destinationId={destinationId}
-        selectedPlaceId={selectedPlaceId}
         focus={focus}
-        onSelectPlace={(placeId) => {
-          setSelectedPlaceId(placeId)
-          focusPlace(placeId)
-        }}
-        onToggleCoveredNetwork={() => setShowCoveredNetwork((value) => !value)}
       />
 
       <StatusBar />
@@ -163,24 +158,6 @@ export function ShadeApp() {
         recents={recents}
         onOpenChange={(open) => setPicker(open ? picker : null)}
         onPick={pick}
-      />
-
-      <PlaceSheet
-        placeId={selectedPlaceId}
-        onOpenChange={(open) => setSelectedPlaceId(open ? selectedPlaceId : null)}
-        onSetOrigin={(placeId) => {
-          setOriginId(placeId)
-          remember(placeId)
-          setSelectedPlaceId(null)
-          setPhase('plan')
-        }}
-        onSetDestination={(placeId) => {
-          setDestinationId(placeId)
-          remember(placeId)
-          setSelectedPlaceId(null)
-          setSelectedRouteId(null)
-          setComputing(true)
-        }}
       />
 
       <SunscreenSheet

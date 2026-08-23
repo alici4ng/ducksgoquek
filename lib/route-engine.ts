@@ -7,7 +7,7 @@
  */
 
 import { COVERAGE_META, type Coverage } from '@/lib/shade-map'
-import { PLACES, PLACE_BY_ID, type Place } from '@/lib/sunway-city'
+import { placeById, PLACES, type Place } from '@/lib/sunway-city'
 
 export type Point = { x: number; y: number }
 
@@ -394,8 +394,8 @@ export function buildRoute(
   label: string,
   id: string,
 ): Route | null {
-  const from = PLACE_BY_ID.get(fromPlaceId)
-  const to = PLACE_BY_ID.get(toPlaceId)
+  const from = placeById(fromPlaceId)
+  const to = placeById(toPlaceId)
   if (!from || !to || from.node === to.node) return null
 
   const chain = dijkstra(from.node, to.node, shadePreference)

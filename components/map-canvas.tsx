@@ -2,98 +2,45 @@
 
 import 'leaflet/dist/leaflet.css'
 
-import type { LeafletMouseEvent, Map as LeafletMap } from 'leaflet'
-import { Layers, Locate, Minus, Plus } from 'lucide-react'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import type { Map as LeafletMap } from 'leaflet'
+import { Locate, Minus, Plus } from 'lucide-react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
 import {
   boundsToLatLng,
   CITY_BOUNDS,
-  GEO_PLACES,
   HOME_BOUNDS,
-  nodeToLatLng,
   pathToLatLngs,
+  placeCentreLatLng,
   type LatLng,
 } from '@/lib/geo'
-import { EDGES, NODES, type Point, type Route } from '@/lib/route-engine'
-import { COVERAGE_META, CONDITIONS_NOW } from '@/lib/shade-map'
-import { CITY, PLACES, PLACE_BY_ID, type Place } from '@/lib/sunway-city'
+import { type Point, type Route } from '@/lib/route-engine'
+import { COVERAGE_META } from '@/lib/shade-map'
+import { placeById } from '@/lib/sunway-city'
 import { cn } from '@/lib/utils'
 
 export type Bounds = { x: number; y: number; w: number; h: number }
-
-/** Shadows fall opposite the sun; length shortens as the sun climbs. */
-const SHADOW = (() => {
-  const away = ((CONDITIONS_NOW.sunAzimuth + 180) * Math.PI) / 180
-  const length = 34 / Math.tan((CONDITIONS_NOW.sunAltitude * Math.PI) / 180) + 14
-  return { dx: Math.sin(away) * length, dy: -Math.cos(away) * length }
-})()
-
-const KIND_FILL: Record<Place['kind'], string> = {
-  mall: 'var(--coverage-indoor)',
-  attraction: 'var(--uv-moderate)',
-  campus: 'var(--coverage-arcade)',
-  hospital: 'var(--destructive)',
-  hotel: 'var(--coverage-bridge)',
-  office: 'var(--map-block)',
-  transit: 'var(--coverage-transit)',
-  residential: 'var(--map-block)',
-  park: 'var(--map-park)',
-  water: 'var(--map-water)',
-  civic: 'var(--map-block)',
-}
-
-/** Landmark footprints are tinted, ordinary stock stays sand-coloured. */
-function placeFill(place: Place) {
-  return place.kind === 'office' ||
-    place.kind === 'residential' ||
-    place.kind === 'civic'
-    ? 'var(--map-block)'
-    : KIND_FILL[place.kind]
-}
-
-/** Real position of a place's centre, exact where anchored. */
-function placeCentre(place: Place): LatLng {
-  return GEO_PLACES[place.id] ?? nodeToLatLng(NODES[place.node])
-}
-
-/** The elevated BRT guideway, drawn through its real station positions. */
-const BRT_STATIONS = [
-  'brt_setiajaya',
-  'brt_mentari',
-  'brt_lagoon',
-  'brt_sunu',
-  'brt_southquay',
-  'brt_usj7',
-]
 
 type MapCanvasProps = {
   route: Route | null
   activeStepId: string | null
   rainMode: boolean
-  showCoveredNetwork: boolean
   originId: string | null
   destinationId: string | null
-  selectedPlaceId: string | null
   focus: Bounds | null
-  onSelectPlace: (placeId: string) => void
 }
 
 export function MapSurface({
   className,
-  onToggleCoveredNetwork,
   ...props
 }: MapCanvasProps & {
   className?: string
-  onToggleCoveredNetwork: () => void
 }) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [map, setMap] = useState<LeafletMap | null>(null)
   const [, setTick] = useState(0)
   const raf = useRef<number | null>(null)
-  const propsRef = useRef(props)
-  propsRef.current = props
 
   const scheduleSync = useCallback(() => {
     if (raf.current !== null) return
@@ -143,25 +90,6 @@ export function MapSurface({
       )
 
       m.on('move zoom resize', scheduleSync)
-      m.on('click', (event: LeafletMouseEvent) => {
-        // Taps land on the basemap, so hit-test the overlays manually.
-        const ppm =
-          2 ** m.getZoom() /
-          (156543.03392 * Math.cos((m.getCenter().lat * Math.PI) / 180))
-        let best: Place | null = null
-        for (const place of PLACES) {
-          const c = m.latLngToContainerPoint(placeCentre(place))
-          const w = place.w * ppm
-          const h = place.h * ppm
-          const hit =
-            event.containerPoint.x >= c.x - w / 2 &&
-            event.containerPoint.x <= c.x + w / 2 &&
-            event.containerPoint.y >= c.y - h / 2 &&
-            event.containerPoint.y <= c.y + h / 2
-          if (hit && (!best || place.w * place.h < best.w * best.h)) best = place
-        }
-        if (best) propsRef.current.onSelectPlace(best.id)
-      })
 
       instance = m
       setMap(m)
@@ -215,13 +143,6 @@ export function MapSurface({
         <MapButton label="Show the whole of Sunway City" onClick={locate}>
           <Locate className="size-4" />
         </MapButton>
-        <MapButton
-          label="Toggle the covered walkway network"
-          active={props.showCoveredNetwork}
-          onClick={onToggleCoveredNetwork}
-        >
-          <Layers className="size-4" />
-        </MapButton>
       </div>
 
       {map && (
@@ -241,29 +162,13 @@ function Overlay({
   route,
   activeStepId,
   rainMode,
-  showCoveredNetwork,
   originId,
   destinationId,
-  selectedPlaceId,
-}: Omit<MapCanvasProps, 'focus' | 'onSelectPlace'> & { map: LeafletMap }) {
-  const zoom = map.getZoom()
-  const metresPerPixel =
-    (156543.03392 * Math.cos((map.getCenter().lat * Math.PI) / 180)) / 2 ** zoom
-  const pxPerM = 1 / metresPerPixel
+}: Omit<MapCanvasProps, 'focus'> & { map: LeafletMap }) {
   const size = map.getSize()
-  /** Equivalent of the old schematic zoom, for label thinning thresholds. */
-  const zoomEq = CITY.w / (size.x * metresPerPixel)
 
-  const origin = originId ? PLACE_BY_ID.get(originId) : undefined
-  const destination = destinationId ? PLACE_BY_ID.get(destinationId) : undefined
-
-  const coveredEdges = useMemo(
-    () =>
-      EDGES.filter(
-        (edge) => COVERAGE_META[edge.coverage].covered && edge.coverage !== 'transit',
-      ),
-    [],
-  )
+  const origin = originId ? placeById(originId) : undefined
+  const destination = destinationId ? placeById(destinationId) : undefined
 
   const px = (ll: LatLng) => map.latLngToContainerPoint(ll)
   const dFor = (points: Point[]) =>
@@ -304,115 +209,7 @@ function Overlay({
             strokeOpacity="0.5"
           />
         </pattern>
-        <pattern
-          id="arcade"
-          width="9"
-          height="9"
-          patternUnits="userSpaceOnUse"
-          patternTransform="rotate(45)"
-        >
-          <line
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="9"
-            stroke="var(--coverage-arcade)"
-            strokeWidth="2"
-            strokeOpacity="0.4"
-          />
-        </pattern>
       </defs>
-
-      {/* Cast shade — the layer the whole product is about. */}
-      <g fill="var(--map-shadow)" opacity={rainMode ? 0.05 : 0.25}>
-        {PLACES.filter((p) => p.kind !== 'transit').map((place) => {
-          const c = px(placeCentre(place))
-          const w = place.w * pxPerM
-          const h = place.h * pxPerM
-          return (
-            <rect
-              key={`ps${place.id}`}
-              x={c.x - w / 2 + SHADOW.dx * pxPerM}
-              y={c.y - h / 2 + SHADOW.dy * pxPerM}
-              width={w}
-              height={h}
-              rx={5}
-            />
-          )
-        })}
-      </g>
-
-      {PLACES.map((place) => {
-        const selected = selectedPlaceId === place.id
-        const c = px(placeCentre(place))
-        const w = place.w * pxPerM
-        const h = place.h * pxPerM
-        return (
-          <g key={place.id}>
-            <rect
-              x={c.x - w / 2}
-              y={c.y - h / 2}
-              width={w}
-              height={h}
-              rx={place.kind === 'transit' ? 8 : 6}
-              fill={placeFill(place)}
-              fillOpacity={place.sheltered ? 0.5 : 0.3}
-              stroke={selected ? 'var(--foreground)' : 'transparent'}
-              strokeWidth={2}
-              className="transition-[fill-opacity]"
-            />
-            {place.sheltered && place.kind !== 'transit' && (
-              <rect
-                x={c.x - w / 2}
-                y={c.y - h / 2}
-                width={w}
-                height={h}
-                rx={6}
-                fill="url(#arcade)"
-                opacity={0.5}
-              />
-            )}
-          </g>
-        )
-      })}
-
-      {/* Elevated BRT alignment. */}
-      <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-        <path
-          d={BRT_STATIONS.map((id, i) => {
-            const p = px(nodeToLatLng(NODES[id]))
-            return `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`
-          }).join(' ')}
-          stroke="var(--card)"
-          strokeWidth={9 * pxPerM}
-          opacity={0.85}
-        />
-        <path
-          d={BRT_STATIONS.map((id, i) => {
-            const p = px(nodeToLatLng(NODES[id]))
-            return `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`
-          }).join(' ')}
-          stroke="var(--coverage-transit)"
-          strokeWidth={5 * pxPerM}
-          strokeOpacity={route ? 0.35 : 0.7}
-          strokeDasharray={`${26 * pxPerM} ${14 * pxPerM}`}
-        />
-      </g>
-
-      {/* The covered network, so the city reads as a shade graph at rest. */}
-      {showCoveredNetwork && (
-        <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-          {coveredEdges.map((edge, i) => (
-            <path
-              key={`cov${i}`}
-              d={dFor([NODES[edge.a], ...(edge.via ?? []), NODES[edge.b]])}
-              stroke={COVERAGE_META[edge.coverage].stroke}
-              strokeWidth={(route ? 4 : 6) * pxPerM}
-              strokeOpacity={route ? 0.25 : 0.55}
-            />
-          ))}
-        </g>
-      )}
 
       {route && (
         <g fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -440,16 +237,9 @@ function Overlay({
         </g>
       )}
 
-      {/* Place labels, thinned out as you zoom away. */}
-      <g pointerEvents="none">
-        {PLACES.filter((place) => zoomEq >= (place.labelFrom ?? 1)).map((place) => (
-          <PlaceLabel key={`l${place.id}`} place={place} px={px} pxPerM={pxPerM} />
-        ))}
-      </g>
-
       {destination && (
         <Marker
-          point={px(nodeToLatLng(NODES[destination.node]))}
+          point={px(placeCentreLatLng(destination))}
           fill="var(--destructive)"
           shape="square"
           label={`Destination: ${destination.name}`}
@@ -457,7 +247,7 @@ function Overlay({
       )}
       {origin && (
         <Marker
-          point={px(nodeToLatLng(NODES[origin.node]))}
+          point={px(placeCentreLatLng(origin))}
           fill="var(--coverage-arcade)"
           shape="dot"
           label={`Origin: ${origin.name}`}
@@ -516,38 +306,6 @@ function ScaleBar({ unitsPerPixel }: { unitsPerPixel: number }) {
         {step >= 1000 ? `${step / 1000} km` : `${step} m`}
       </span>
     </div>
-  )
-}
-
-function PlaceLabel({
-  place,
-  px,
-  pxPerM,
-}: {
-  place: Place
-  px: (ll: LatLng) => { x: number; y: number }
-  pxPerM: number
-}) {
-  const c = px(placeCentre(place))
-  const transit = place.kind === 'transit'
-  return (
-    <g>
-      <text
-        x={c.x}
-        y={transit ? c.y - (place.h * pxPerM) / 2 - 9 : c.y}
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fontSize={transit ? 9.5 : 11}
-        fontWeight={600}
-        fill="var(--foreground)"
-        stroke="var(--background)"
-        strokeWidth={3.2}
-        paintOrder="stroke"
-        className="font-sans"
-      >
-        {place.short ?? place.name}
-      </text>
-    </g>
   )
 }
 

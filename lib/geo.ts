@@ -11,6 +11,7 @@
  */
 
 import { NODES, type Point } from '@/lib/route-engine'
+import type { Place } from '@/lib/sunway-city'
 
 export type LatLng = { lat: number; lng: number }
 
@@ -139,6 +140,40 @@ export function schematicToLatLng(point: Point): LatLng {
     lat: LAT_FIT.a * point.x + LAT_FIT.b * point.y + LAT_FIT.c,
     lng: LNG_FIT.a * point.x + LNG_FIT.b * point.y + LNG_FIT.c,
   }
+}
+
+/** Inverse of schematicToLatLng — solves the same 2×2 affine system. */
+export function latLngToSchematic(ll: LatLng): Point {
+  const det = LAT_FIT.a * LNG_FIT.b - LAT_FIT.b * LNG_FIT.a
+  const dLat = ll.lat - LAT_FIT.c
+  const dLng = ll.lng - LNG_FIT.c
+  return {
+    x: (LNG_FIT.b * dLat - LAT_FIT.b * dLng) / det,
+    y: (-LNG_FIT.a * dLat + LAT_FIT.a * dLng) / det,
+  }
+}
+
+/** Real position of a place's centre: explicit coords, then anchor, then node. */
+export function placeCentreLatLng(place: Place): LatLng {
+  if (place.lat != null && place.lng != null) return { lat: place.lat, lng: place.lng }
+  return GEO_PLACES[place.id] ?? nodeToLatLng(NODES[place.node])
+}
+
+/** Closest route-graph node to a real position, in metres. */
+export function nearestGraphNode(ll: LatLng): string {
+  let best: string | null = null
+  let bestDist = Infinity
+  for (const [id, geo] of Object.entries(GEO_NODES)) {
+    if (!NODES[id]) continue
+    const dLat = (geo.lat - ll.lat) * METRES_PER_DEGREE_LAT
+    const dLng = (geo.lng - ll.lng) * METRES_PER_DEGREE_LNG
+    const d = Math.hypot(dLat, dLng)
+    if (d < bestDist) {
+      bestDist = d
+      best = id
+    }
+  }
+  return best ?? 'pyr_c'
 }
 
 const NODE_ID_BY_POINT = new Map(Object.entries(NODES).map(([id, p]) => [p, id]))
