@@ -7,20 +7,28 @@ import { Locate, Minus, Plus } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { Button } from '@/components/ui/button'
-import {
-  boundsToLatLng,
-  CITY_BOUNDS,
-  HOME_BOUNDS,
-  pathToLatLngs,
-  placeCentreLatLng,
-  type LatLng,
-} from '@/lib/geo'
-import { type Point, type Route } from '@/lib/route-engine'
+import type { LatLng, Route } from '@/lib/route-engine'
 import { COVERAGE_META } from '@/lib/shade-map'
 import { placeById } from '@/lib/sunway-city'
 import { cn } from '@/lib/utils'
 
-export type Bounds = { x: number; y: number; w: number; h: number }
+export type LatLngBounds = { south: number; north: number; west: number; east: number }
+
+/** Opening frame: the dense core around Sunway Pyramid and the campuses. */
+const HOME_BOUNDS: LatLngBounds = {
+  south: 3.0625,
+  north: 3.0765,
+  west: 101.598,
+  east: 101.6105,
+}
+
+/** The whole mapped area, reachable from the locate button. */
+const CITY_BOUNDS: LatLngBounds = {
+  south: 3.052,
+  north: 3.086,
+  west: 101.5895,
+  east: 101.614,
+}
 
 type MapCanvasProps = {
   route: Route | null
@@ -28,7 +36,7 @@ type MapCanvasProps = {
   rainMode: boolean
   originId: string | null
   destinationId: string | null
-  focus: Bounds | null
+  focus: LatLngBounds | null
 }
 
 export function MapSurface({
@@ -105,11 +113,10 @@ export function MapSurface({
   const { focus } = props
   useEffect(() => {
     if (!map || !focus) return
-    const b = boundsToLatLng(focus)
     map.flyToBounds(
       [
-        [b.south, b.west],
-        [b.north, b.east],
+        [focus.south, focus.west],
+        [focus.north, focus.east],
       ],
       { duration: 0.5 },
     )
@@ -171,8 +178,8 @@ function Overlay({
   const destination = destinationId ? placeById(destinationId) : undefined
 
   const px = (ll: LatLng) => map.latLngToContainerPoint(ll)
-  const dFor = (points: Point[]) =>
-    pathToLatLngs(points)
+  const dFor = (points: LatLng[]) =>
+    points
       .map((ll, i) => {
         const p = px(ll)
         return `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`
@@ -239,7 +246,7 @@ function Overlay({
 
       {destination && (
         <Marker
-          point={px(placeCentreLatLng(destination))}
+          point={px({ lat: destination.lat, lng: destination.lng })}
           fill="var(--destructive)"
           shape="square"
           label={`Destination: ${destination.name}`}
@@ -247,7 +254,7 @@ function Overlay({
       )}
       {origin && (
         <Marker
-          point={px(placeCentreLatLng(origin))}
+          point={px({ lat: origin.lat, lng: origin.lng })}
           fill="var(--coverage-arcade)"
           shape="dot"
           label={`Origin: ${origin.name}`}

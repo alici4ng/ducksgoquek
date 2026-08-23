@@ -1,0 +1,681 @@
+{
+ "410114_257672": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257672.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257672/410114"
+ },
+ "410114_257673": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257673.png",
+  "members": [
+   [
+    8,
+    "G061",
+    1234667533
+   ],
+   [
+    30,
+    "G120",
+    1467785089
+   ],
+   [
+    37,
+    "G136",
+    1467785091
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410114"
+ },
+ "410114_257674": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257674.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410114"
+ },
+ "410114_257675": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257675.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410114"
+ },
+ "410114_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257676.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410114"
+ },
+ "410114_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410114_257677.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410114"
+ },
+ "410115_257666": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410115_257666.png",
+  "members": [
+   [
+    22,
+    "G107",
+    1309283276
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410115"
+ },
+ "410115_257673": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410115_257673.png",
+  "members": [
+   [
+    8,
+    "G061",
+    1234667533
+   ],
+   [
+    9,
+    "G062",
+    1234667534
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410115"
+ },
+ "410115_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410115_257677.png",
+  "members": [
+   [
+    30,
+    "G120",
+    1467785089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410115"
+ },
+ "410116_257666": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410116_257666.png",
+  "members": [
+   [
+    22,
+    "G107",
+    1309283276
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410116"
+ },
+ "410116_257668": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410116_257668.png",
+  "members": [
+   [
+    10,
+    "G075",
+    1303647089
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410116"
+ },
+ "410116_257673": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410116_257673.png",
+  "members": [
+   [
+    9,
+    "G062",
+    1234667534
+   ],
+   [
+    28,
+    "G117",
+    1467743200
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410116"
+ },
+ "410116_257674": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410116_257674.png",
+  "members": [
+   [
+    2,
+    "G007",
+    210994295
+   ],
+   [
+    6,
+    "G053",
+    1120344217
+   ],
+   [
+    7,
+    "G057",
+    1232335176
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410116"
+ },
+ "410116_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410116_257677.png",
+  "members": [
+   [
+    27,
+    "G116",
+    1460003891
+   ],
+   [
+    30,
+    "G120",
+    1467785089
+   ],
+   [
+    31,
+    "G121",
+    1467785090
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410116"
+ },
+ "410117_257665": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257665.png",
+  "members": [
+   [
+    22,
+    "G107",
+    1309283276
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410117"
+ },
+ "410117_257668": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257668.png",
+  "members": [
+   [
+    10,
+    "G075",
+    1303647089
+   ],
+   [
+    13,
+    "G080",
+    1303647094
+   ],
+   [
+    17,
+    "G086",
+    1303647100
+   ],
+   [
+    21,
+    "G098",
+    1303809994
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410117"
+ },
+ "410117_257669": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257669.png",
+  "members": [
+   [
+    10,
+    "G075",
+    1303647089
+   ],
+   [
+    11,
+    "G076",
+    1303647090
+   ],
+   [
+    13,
+    "G080",
+    1303647094
+   ],
+   [
+    14,
+    "G081",
+    1303647095
+   ],
+   [
+    15,
+    "G083",
+    1303647097
+   ],
+   [
+    16,
+    "G085",
+    1303647099
+   ],
+   [
+    19,
+    "G094",
+    1303647108
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410117"
+ },
+ "410117_257670": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257670.png",
+  "members": [
+   [
+    11,
+    "G076",
+    1303647090
+   ],
+   [
+    19,
+    "G094",
+    1303647108
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410117"
+ },
+ "410117_257671": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257671.png",
+  "members": [
+   [
+    23,
+    "G112",
+    1460003887
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257671/410117"
+ },
+ "410117_257673": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257673.png",
+  "members": [
+   [
+    28,
+    "G117",
+    1467743200
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257673/410117"
+ },
+ "410117_257674": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257674.png",
+  "members": [
+   [
+    2,
+    "G007",
+    210994295
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257674/410117"
+ },
+ "410117_257675": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257675.png",
+  "members": [
+   [
+    2,
+    "G007",
+    210994295
+   ],
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410117"
+ },
+ "410117_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410117_257677.png",
+  "members": [
+   [
+    25,
+    "G114",
+    1460003889
+   ],
+   [
+    26,
+    "G115",
+    1460003890
+   ],
+   [
+    27,
+    "G116",
+    1460003891
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410117"
+ },
+ "410118_257664": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257664.png",
+  "members": [
+   [
+    1,
+    "G001",
+    151209905
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257664/410118"
+ },
+ "410118_257665": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257665.png",
+  "members": [
+   [
+    1,
+    "G001",
+    151209905
+   ],
+   [
+    4,
+    "G021",
+    263461645
+   ],
+   [
+    12,
+    "G078",
+    1303647092
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410118"
+ },
+ "410118_257668": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257668.png",
+  "members": [
+   [
+    21,
+    "G098",
+    1303809994
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257668/410118"
+ },
+ "410118_257669": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257669.png",
+  "members": [
+   [
+    3,
+    "G010",
+    211071568
+   ],
+   [
+    18,
+    "G089",
+    1303647103
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410118"
+ },
+ "410118_257670": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257670.png",
+  "members": [
+   [
+    19,
+    "G094",
+    1303647108
+   ],
+   [
+    20,
+    "G095",
+    1303647109
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410118"
+ },
+ "410118_257675": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257675.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257675/410118"
+ },
+ "410118_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410118_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410118"
+ },
+ "410119_257669": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410119_257669.png",
+  "members": [
+   [
+    18,
+    "G089",
+    1303647103
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410119"
+ },
+ "410119_257670": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410119_257670.png",
+  "members": [
+   [
+    3,
+    "G010",
+    211071568
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257670/410119"
+ },
+ "410119_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410119_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ],
+   [
+    24,
+    "G113",
+    1460003888
+   ],
+   [
+    32,
+    "G133",
+    1481677600
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410119"
+ },
+ "410119_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410119_257677.png",
+  "members": [
+   [
+    24,
+    "G113",
+    1460003888
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410119"
+ },
+ "410120_257665": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257665.png",
+  "members": [
+   [
+    35,
+    "G136",
+    1303647085
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257665/410120"
+ },
+ "410120_257666": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257666.png",
+  "members": [
+   [
+    35,
+    "G136",
+    1303647085
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257666/410120"
+ },
+ "410120_257669": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257669.png",
+  "members": [
+   [
+    36,
+    "G136",
+    1303647107
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410120"
+ },
+ "410120_257671": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257671.png",
+  "members": [
+   [
+    3,
+    "G010",
+    211071568
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257671/410120"
+ },
+ "410120_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410120"
+ },
+ "410120_257678": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410120_257678.png",
+  "members": [
+   [
+    29,
+    "G119",
+    1467785088
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410120"
+ },
+ "410121_257669": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410121_257669.png",
+  "members": [
+   [
+    36,
+    "G136",
+    1303647107
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257669/410121"
+ },
+ "410121_257672": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410121_257672.png",
+  "members": [
+   [
+    3,
+    "G010",
+    211071568
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257672/410121"
+ },
+ "410121_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410121_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410121"
+ },
+ "410121_257678": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410121_257678.png",
+  "members": [
+   [
+    29,
+    "G119",
+    1467785088
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410121"
+ },
+ "410122_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410122_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410122"
+ },
+ "410122_257677": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410122_257677.png",
+  "members": [
+   [
+    33,
+    "G136",
+    1063221997
+   ],
+   [
+    34,
+    "G136",
+    1063221998
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257677/410122"
+ },
+ "410122_257678": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410122_257678.png",
+  "members": [
+   [
+    29,
+    "G119",
+    1467785088
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257678/410122"
+ },
+ "410123_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410123_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410123"
+ },
+ "410124_257676": {
+  "file": "C:\\Users\\xrthe\\AppData\\Local\\Temp\\bandar_tiles\\annot\\a_410124_257676.png",
+  "members": [
+   [
+    5,
+    "G041",
+    820509852
+   ]
+  ],
+  "src": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/19/257676/410124"
+ }
+}

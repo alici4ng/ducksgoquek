@@ -1,0 +1,288 @@
+{
+  "corridor": [
+    1460003882,
+    1460003881,
+    1467745043,
+    1467745042,
+    1467745044,
+    1460003879,
+    1467745041,
+    1460003884,
+    1460003886,
+    1460003885,
+    1460003883,
+    603816937,
+    1303647078,
+    1303647077,
+    1303647083
+  ],
+  "boundary_start_way": 1460003882,
+  "boundary_end_way": 1303647083,
+  "bulk_tag_candidates": [
+    1467745043,
+    1467745044,
+    1460003879,
+    1467745041,
+    1460003884,
+    1460003886,
+    1460003885,
+    1460003883,
+    1303647078,
+    1303647077
+  ],
+  "pulled_out": [
+    {
+      "way_id": 1460003881,
+      "reason": "no cover signal tags mid-corridor (layer/bridge/covered all absent) \u2014 suspected gap in roofline; verify individually"
+    },
+    {
+      "way_id": 1467745042,
+      "reason": "no cover signal tags mid-corridor (layer/bridge/covered all absent) \u2014 suspected gap in roofline; verify individually"
+    },
+    {
+      "way_id": 603816937,
+      "reason": "no cover signal tags mid-corridor (layer/bridge/covered all absent) \u2014 suspected gap in roofline; verify individually"
+    }
+  ],
+  "graph_notes": "Main pedestrian component traversed by exhaustive DFS from the endpoint nearest Monash campus; path chosen maximizing proximity to Sunway Pyramid/SunU anchor then length. Boundary ways are HYPOTHESES from cover-signal tags (covered/indoor/corridor/building_passage/layer>=1/bridge) pending imagery verification.",
+  "components_summary": "69 components; main has 24 ways",
+  "per_way_detail": [
+    {
+      "way_id": 1460003882,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "start": [
+        3.0649366,
+        101.6069071
+      ],
+      "end": [
+        3.064924,
+        101.6072667
+      ]
+    },
+    {
+      "way_id": 1460003881,
+      "tags": {
+        "highway": "footway"
+      },
+      "start": [
+        3.0649294,
+        101.6068594
+      ],
+      "end": [
+        3.0649366,
+        101.6069071
+      ]
+    },
+    {
+      "way_id": 1467745043,
+      "tags": {
+        "highway": "footway",
+        "tunnel": "building_passage"
+      },
+      "start": [
+        3.0650936,
+        101.605055
+      ],
+      "end": [
+        3.0649294,
+        101.6068594
+      ]
+    },
+    {
+      "way_id": 1467745042,
+      "tags": {
+        "highway": "steps"
+      },
+      "start": [
+        3.0650783,
+        101.6046654
+      ],
+      "end": [
+        3.0650936,
+        101.605055
+      ]
+    },
+    {
+      "way_id": 1467745044,
+      "tags": {
+        "highway": "footway",
+        "tunnel": "building_passage"
+      },
+      "start": [
+        3.0651571,
+        101.6046593
+      ],
+      "end": [
+        3.0650783,
+        101.6046654
+      ]
+    },
+    {
+      "way_id": 1460003879,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "covered": "yes"
+      },
+      "start": [
+        3.0653133,
+        101.604645
+      ],
+      "end": [
+        3.0651571,
+        101.6046593
+      ]
+    },
+    {
+      "way_id": 1467745041,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "covered": "yes",
+        "name": "Canopy Walk"
+      },
+      "start": [
+        3.0679465,
+        101.6046907
+      ],
+      "end": [
+        3.0653133,
+        101.604645
+      ]
+    },
+    {
+      "way_id": 1460003884,
+      "tags": {
+        "highway": "footway",
+        "covered": "yes",
+        "indoor": "yes",
+        "name": "Canopy Walk"
+      },
+      "start": [
+        3.0682878,
+        101.6046941
+      ],
+      "end": [
+        3.0679465,
+        101.6046907
+      ]
+    },
+    {
+      "way_id": 1460003886,
+      "tags": {
+        "highway": "footway",
+        "covered": "yes",
+        "name": "Canopy Walk"
+      },
+      "start": [
+        3.0684731,
+        101.6047357
+      ],
+      "end": [
+        3.0682878,
+        101.6046941
+      ]
+    },
+    {
+      "way_id": 1460003885,
+      "tags": {
+        "highway": "steps",
+        "layer": "1",
+        "bridge": "yes",
+        "covered": "yes",
+        "name": "Canopy Walk"
+      },
+      "start": [
+        3.0685087,
+        101.6047859
+      ],
+      "end": [
+        3.0684731,
+        101.6047357
+      ]
+    },
+    {
+      "way_id": 1460003883,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "covered": "yes",
+        "name": "Canopy Walk"
+      },
+      "start": [
+        3.0715106,
+        101.6060848
+      ],
+      "end": [
+        3.0685087,
+        101.6047859
+      ]
+    },
+    {
+      "way_id": 603816937,
+      "tags": {
+        "highway": "footway"
+      },
+      "start": [
+        3.0715106,
+        101.6060848
+      ],
+      "end": [
+        3.0716012,
+        101.6060928
+      ]
+    },
+    {
+      "way_id": 1303647078,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "start": [
+        3.0716012,
+        101.6060928
+      ],
+      "end": [
+        3.0721427,
+        101.606079
+      ]
+    },
+    {
+      "way_id": 1303647077,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "start": [
+        3.0730476,
+        101.6060707
+      ],
+      "end": [
+        3.0721427,
+        101.606079
+      ]
+    },
+    {
+      "way_id": 1303647083,
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "start": [
+        3.0730476,
+        101.6060707
+      ],
+      "end": [
+        3.0721427,
+        101.606079
+      ]
+    }
+  ]
+}

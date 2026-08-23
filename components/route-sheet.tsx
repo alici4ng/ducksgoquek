@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import type { Route } from '@/lib/route-engine'
 import { COVERAGE_META } from '@/lib/shade-map'
-import { PLACE_BY_ID } from '@/lib/sunway-city'
+import { placeById } from '@/lib/sunway-city'
 import { cn } from '@/lib/utils'
 
 type RouteSheetProps = {
@@ -31,8 +31,8 @@ export function RouteSheet({
   onActiveStepChange,
   onBack,
 }: RouteSheetProps) {
-  const origin = PLACE_BY_ID.get(originId)
-  const destination = PLACE_BY_ID.get(destinationId)
+  const origin = placeById(originId)
+  const destination = placeById(destinationId)
   const fastest = routes.reduce((a, b) => (b.minutes < a.minutes ? b : a), route)
   const delta = route.minutes - fastest.minutes
 

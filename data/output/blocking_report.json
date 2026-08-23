@@ -1,0 +1,620 @@
+{
+  "unresolved": [
+    {
+      "osm_way_id": "151209905",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "151209906",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "151224274",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210983319",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210994244",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210994261",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210994295",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210994303",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "210994304",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "211071568",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195953",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195960",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195963",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195964",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195967",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195969",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195970",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195971",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195973",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "221195974",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "263461645",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "263461647",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "263461648",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "461676067",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "603234075",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "603234076",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "603815895",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "603816937",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": true
+    },
+    {
+      "osm_way_id": "603816938",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "764530864",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "764530866",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "775140679",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "775140680",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "776301354",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "776301355",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "776301356",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "777826792",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "820509852",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "921167830",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "921167831",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "930746843",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "931278406",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "991986584",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "992117732",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "999073853",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "999209165",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1063221996",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1063221997",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1063221998",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1120344217",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1230756957",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1230756958",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1230756959",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1232335176",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1232335178",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1234667533",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1234667534",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1234667535",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1249942558",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647085",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647089",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647090",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647092",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647094",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647095",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647097",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647099",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647100",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647103",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647105",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647107",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647108",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303647109",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303809994",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303809998",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303809999",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303810001",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1303810002",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1309283276",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1427875104",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1427916322",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1460003887",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1460003888",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1460003889",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1460003890",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1460003891",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1467743200",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1467785089",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1467785090",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1467785091",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997594",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997595",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997596",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997597",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997598",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997599",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997600",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997601",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997607",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1469997608",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1481677600",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    },
+    {
+      "osm_way_id": "1511509679",
+      "review_id": null,
+      "needed": "no decision recorded for this way",
+      "on_corridor": false
+    }
+  ],
+  "excluded_on_corridor": [
+    "603816937"
+  ],
+  "corridor_intact": false
+}

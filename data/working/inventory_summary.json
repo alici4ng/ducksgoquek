@@ -1,0 +1,34 @@
+{
+  "total_way_count": 165,
+  "total_length_m": 15381.96,
+  "by_highway": {
+    "(none)": 5,
+    "corridor": 27,
+    "footway": 102,
+    "living_street": 2,
+    "path": 2,
+    "pedestrian": 1,
+    "secondary_link": 2,
+    "service": 3,
+    "steps": 21
+  },
+  "by_covered_value": {
+    "(none)": 140,
+    "no": 4,
+    "yes": 21
+  },
+  "by_status": {
+    "existing_explicit": 25,
+    "implicit_review": 62,
+    "missing": 78
+  },
+  "conversion": {
+    "approach": "manual python ways+nodes -> LineString (deterministic)",
+    "ways_in_query": 165,
+    "ways_kept": 165,
+    "ways_excluded": 0,
+    "helper_nodes_in_response": 620,
+    "ways_with_missing_node_refs": 0
+  },
+  "source_cache": "data/overpass/overpass_response.json"
+}

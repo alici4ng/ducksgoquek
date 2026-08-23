@@ -7,7 +7,6 @@
  * any location in the world can be found, same as the OSM website.
  */
 
-import { latLngToSchematic, nearestGraphNode, type LatLng } from '@/lib/geo'
 import { registerCustomPlace, type Place, type PlaceKind } from '@/lib/sunway-city'
 
 const ENDPOINT = 'https://nominatim.openstreetmap.org/search'
@@ -81,25 +80,17 @@ export async function searchOsm(query: string, signal?: AbortSignal): Promise<Os
 
 /**
  * Turns a search result into a Place the rest of the app understands and
- * registers it, so placeById() resolves it from then on. The place anchors
- * itself to the nearest route-graph node — the interim routing story until
- * arbitrary-point routing is designed.
+ * registers it, so placeById() resolves it from then on. Routing snaps the
+ * coordinates to the pedestrian graph at request time.
  */
 export function makeOsmPlace(result: OsmResult): Place {
-  const ll: LatLng = { lat: result.lat, lng: result.lng }
-  const centre = latLngToSchematic(ll)
   const place: Place = {
     id: result.id,
     name: result.name,
     kind: result.kind,
-    x: centre.x - 40,
-    y: centre.y - 40,
-    w: 80,
-    h: 80,
-    node: nearestGraphNode(ll),
-    sheltered: false,
     lat: result.lat,
     lng: result.lng,
+    sheltered: false,
     blurb: result.detail ? `${result.detail} · from OpenStreetMap` : 'From OpenStreetMap',
   }
   registerCustomPlace(place)

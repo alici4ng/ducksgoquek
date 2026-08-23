@@ -1,28 +1,25 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { MapSurface, type Bounds } from '@/components/map-canvas'
+import { MapSurface, type LatLngBounds } from '@/components/map-canvas'
 import { MapHud, StatusBar } from '@/components/map-hud'
 import { PlacePicker, type PickedPlace } from '@/components/place-picker'
 import { PlanSheet } from '@/components/plan-sheet'
 import { RouteSheet } from '@/components/route-sheet'
 import { SunscreenSheet } from '@/components/sunscreen-sheet'
 import { makeOsmPlace } from '@/lib/osm-search'
-import { boundsOf, buildRouteSet } from '@/lib/route-engine'
+import { boundsOf, buildRouteSet, type Route } from '@/lib/route-engine'
 import { placeById } from '@/lib/sunway-city'
 
 type Phase = 'plan' | 'route'
 type PickerTarget = 'origin' | 'destination' | null
 
-/** Sheets cover the lower half, so pad the frame downward to keep it clear. */
-function aboveSheet(bounds: Bounds): Bounds {
-  return {
-    x: bounds.x,
-    y: bounds.y - bounds.h * 0.06,
-    w: bounds.w,
-    h: bounds.h * 2.45,
-  }
+/** Sheets cover the lower half, so stretch the frame southward to keep the
+ *  subject in the visible upper part. */
+function aboveSheet(bounds: LatLngBounds): LatLngBounds {
+  const h = bounds.north - bounds.south
+  return { ...bounds, north: bounds.north + h * 0.06, south: bounds.south - h * 1.45 }
 }
 
 export function ShadeApp() {
@@ -36,23 +33,27 @@ export function ShadeApp() {
   const [reminderOpen, setReminderOpen] = useState(false)
   const [picker, setPicker] = useState<PickerTarget>(null)
   const [recents, setRecents] = useState<string[]>(['pyramid', 'monash', 'medical'])
-  const [focus, setFocus] = useState<Bounds | null>(null)
+  const [focus, setFocus] = useState<LatLngBounds | null>(null)
+  const [routes, setRoutes] = useState<Route[]>([])
 
-  const routes = useMemo(
-    () => (phase === 'route' ? buildRouteSet(originId, destinationId) : []),
-    [phase, originId, destinationId],
-  )
   const route =
     routes.find((candidate) => candidate.id === selectedRouteId) ?? routes[0] ?? null
 
+  // Routing is async: the graph loads from a static GeoJSON on first request,
+  // then Dijkstra runs in-browser per strategy.
   useEffect(() => {
     if (!computing) return
-    const timer = setTimeout(() => {
+    let cancelled = false
+    buildRouteSet(originId, destinationId).then((result) => {
+      if (cancelled) return
+      setRoutes(result)
       setComputing(false)
-      setPhase('route')
-    }, 750)
-    return () => clearTimeout(timer)
-  }, [computing])
+      if (result.length > 0) setPhase('route')
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [computing, originId, destinationId])
 
   useEffect(() => {
     if (phase !== 'route') return
@@ -87,12 +88,13 @@ export function ShadeApp() {
   function focusPlace(placeId: string) {
     const place = placeById(placeId)
     if (!place) return
+    // ~260 m around the place, stretched south so it clears the sheet.
     setFocus(
       aboveSheet({
-        x: place.x - 260,
-        y: place.y - 260,
-        w: place.w + 520,
-        h: place.h + 520,
+        south: place.lat - 260 / 110574,
+        north: place.lat + 260 / 110574,
+        west: place.lng - 260 / 111152,
+        east: place.lng + 260 / 111152,
       }),
     )
   }

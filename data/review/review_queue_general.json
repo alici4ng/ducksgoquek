@@ -1,0 +1,3364 @@
+{
+  "items": [
+    {
+      "review_id": "G001",
+      "osm_way_ids": [
+        151209905
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07390145,
+          101.6060763
+        ],
+        "start": [
+          3.0741126,
+          101.6059746
+        ],
+        "end": [
+          3.0736621,
+          101.6061012
+        ]
+      },
+      "length_m": 67.5,
+      "corridor_dist_m": 68.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G002",
+      "osm_way_ids": [
+        151209906
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07415285,
+          101.6059682
+        ],
+        "start": [
+          3.0741126,
+          101.6059746
+        ],
+        "end": [
+          3.0741931,
+          101.6059618
+        ]
+      },
+      "length_m": 9.1,
+      "corridor_dist_m": 117.7,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G004",
+      "osm_way_ids": [
+        210983319
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0630203854166673,
+          101.60355849583334
+        ],
+        "start": [
+          3.0618682,
+          101.6018153
+        ],
+        "end": [
+          3.0612117,
+          101.6046178
+        ]
+      },
+      "length_m": 951.7,
+      "corridor_dist_m": 105.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G006",
+      "osm_way_ids": [
+        210994261
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0645732199999998,
+          101.59955876000001
+        ],
+        "start": [
+          3.0645521,
+          101.5992572
+        ],
+        "end": [
+          3.064583,
+          101.6001466
+        ]
+      },
+      "length_m": 103.2,
+      "corridor_dist_m": 500.4,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G007",
+      "osm_way_ids": [
+        210994295
+      ],
+      "tags": {
+        "highway": "service",
+        "sidewalk": "right"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0671855999999997,
+          101.60506054999999
+        ],
+        "start": [
+          3.0668425,
+          101.6056558
+        ],
+        "end": [
+          3.0675277,
+          101.6047114
+        ]
+      },
+      "length_m": 138.1,
+      "corridor_dist_m": 2.8,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level service. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G008",
+      "osm_way_ids": [
+        210994303
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0644587666666667,
+          101.59965906666666
+        ],
+        "start": [
+          3.0645146,
+          101.5992574
+        ],
+        "end": [
+          3.0643539,
+          101.5999784
+        ]
+      },
+      "length_m": 83.5,
+      "corridor_dist_m": 524.9,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G010",
+      "osm_way_ids": [
+        211071568
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06951792,
+          101.60723088
+        ],
+        "start": [
+          3.0685368,
+          101.6081852
+        ],
+        "end": [
+          3.0706424,
+          101.6057337
+        ]
+      },
+      "length_m": 386.7,
+      "corridor_dist_m": 2.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G013",
+      "osm_way_ids": [
+        221195963
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07152725,
+          101.60977575000001
+        ],
+        "start": [
+          3.0715413,
+          101.6097498
+        ],
+        "end": [
+          3.0715132,
+          101.6098017
+        ]
+      },
+      "length_m": 6.6,
+      "corridor_dist_m": 406.6,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G016",
+      "osm_way_ids": [
+        221195969
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0716839,
+          101.609776
+        ],
+        "start": [
+          3.0717173,
+          101.6098109
+        ],
+        "end": [
+          3.0716505,
+          101.6097411
+        ]
+      },
+      "length_m": 10.7,
+      "corridor_dist_m": 405.6,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G017",
+      "osm_way_ids": [
+        221195970
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0716297,
+          101.60961155
+        ],
+        "start": [
+          3.0716402,
+          101.6095912
+        ],
+        "end": [
+          3.0716192,
+          101.6096319
+        ]
+      },
+      "length_m": 5.1,
+      "corridor_dist_m": 388.9,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G018",
+      "osm_way_ids": [
+        221195971
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0715479500000002,
+          101.60963625
+        ],
+        "start": [
+          3.0715615,
+          101.6096496
+        ],
+        "end": [
+          3.0715344,
+          101.6096229
+        ]
+      },
+      "length_m": 4.2,
+      "corridor_dist_m": 392.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G021",
+      "osm_way_ids": [
+        263461645
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0736090999999996,
+          101.6060782
+        ],
+        "start": [
+          3.0736621,
+          101.6061012
+        ],
+        "end": [
+          3.0735561,
+          101.6060552
+        ]
+      },
+      "length_m": 12.8,
+      "corridor_dist_m": 56.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level steps. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G023",
+      "osm_way_ids": [
+        263461648
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.074025975,
+          101.60862415
+        ],
+        "start": [
+          3.0742604,
+          101.6087412
+        ],
+        "end": [
+          3.0737896,
+          101.6085061
+        ]
+      },
+      "length_m": 78.0,
+      "corridor_dist_m": 282.9,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G024",
+      "osm_way_ids": [
+        461676067
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07756703,
+          101.60597904000001
+        ],
+        "start": [
+          3.0738798,
+          101.6045498
+        ],
+        "end": [
+          3.0765545,
+          101.6082222
+        ]
+      },
+      "length_m": 1334.1,
+      "corridor_dist_m": 138.7,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G025",
+      "osm_way_ids": [
+        603234075
+      ],
+      "tags": {
+        "highway": "path"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07303755,
+          101.60362375
+        ],
+        "start": [
+          3.072943,
+          101.6036358
+        ],
+        "end": [
+          3.0731321,
+          101.6036117
+        ]
+      },
+      "length_m": 21.2,
+      "corridor_dist_m": 205.3,
+      "adjacent_to_covered_network": true,
+      "reason": "No coverage tag, ground-level, but shares an endpoint with a covered=yes way: may be the exposed approach or a covered extension. Determine cover from imagery.",
+      "evidence_needed": "Overhead imagery at the junction; street-level along the way.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G026",
+      "osm_way_ids": [
+        603234076
+      ],
+      "tags": {
+        "highway": "path"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.073875,
+          101.60348755
+        ],
+        "start": [
+          3.0739845,
+          101.6034936
+        ],
+        "end": [
+          3.0737655,
+          101.6034815
+        ]
+      },
+      "length_m": 24.4,
+      "corridor_dist_m": 236.3,
+      "adjacent_to_covered_network": true,
+      "reason": "No coverage tag, ground-level, but shares an endpoint with a covered=yes way: may be the exposed approach or a covered extension. Determine cover from imagery.",
+      "evidence_needed": "Overhead imagery at the junction; street-level along the way.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G027",
+      "osm_way_ids": [
+        603814879
+      ],
+      "tags": {
+        "highway": "steps",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0718356,
+          101.6087023
+        ],
+        "start": [
+          3.0718354,
+          101.6088811
+        ],
+        "end": [
+          3.0718358,
+          101.6085235
+        ]
+      },
+      "length_m": 39.7,
+      "corridor_dist_m": 270.8,
+      "adjacent_to_covered_network": true,
+      "reason": "Indoor feature (indoor=yes): under a roof by definition. Confirm it is an enclosed walkable space and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the enclosing building.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G028",
+      "osm_way_ids": [
+        603815894
+      ],
+      "tags": {
+        "highway": "steps",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07293085,
+          101.60881459999999
+        ],
+        "start": [
+          3.07296,
+          101.6088152
+        ],
+        "end": [
+          3.0729017,
+          101.608814
+        ]
+      },
+      "length_m": 6.5,
+      "corridor_dist_m": 304.8,
+      "adjacent_to_covered_network": true,
+      "reason": "Indoor feature (indoor=yes): under a roof by definition. Confirm it is an enclosed walkable space and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the enclosing building.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G030",
+      "osm_way_ids": [
+        603816937
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0715559,
+          101.60608880000001
+        ],
+        "start": [
+          3.0715106,
+          101.6060848
+        ],
+        "end": [
+          3.0716012,
+          101.6060928
+        ]
+      },
+      "length_m": 10.1,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Corridor traversal pulled this way out of bulk inference: no cover signal tags mid-corridor \u2014 suspected gap in the elevated linkway roofline. Verify whether this short stretch is actually roofed.",
+      "evidence_needed": "Overhead imagery at this exact corridor segment; street-level if ambiguous.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G031",
+      "osm_way_ids": [
+        603816938
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0651764999999997,
+          101.6013417
+        ],
+        "start": [
+          3.0652252,
+          101.6013916
+        ],
+        "end": [
+          3.0650862,
+          101.6012858
+        ]
+      },
+      "length_m": 20.3,
+      "corridor_dist_m": 350.5,
+      "adjacent_to_covered_network": true,
+      "reason": "No coverage tag, ground-level, but shares an endpoint with a covered=yes way: may be the exposed approach or a covered extension. Determine cover from imagery.",
+      "evidence_needed": "Overhead imagery at the junction; street-level along the way.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G033",
+      "osm_way_ids": [
+        764530865
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "tunnel": "building_passage"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0648493500000002,
+          101.60892210000002
+        ],
+        "start": [
+          3.0644289,
+          101.6091655
+        ],
+        "end": [
+          3.0652054,
+          101.6086624
+        ]
+      },
+      "length_m": 136.6,
+      "corridor_dist_m": 155.8,
+      "adjacent_to_covered_network": false,
+      "reason": "Tagged tunnel=building_passage: passes through a building, so overhead cover is implied by definition. Confirm the passage is enclosed and record covered=yes with built-passage provenance.",
+      "evidence_needed": "Overhead imagery + street-level to confirm enclosed passage vs open gap.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G034",
+      "osm_way_ids": [
+        764530866
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.065680625,
+          101.6099786
+        ],
+        "start": [
+          3.0659365,
+          101.6100814
+        ],
+        "end": [
+          3.0651887,
+          101.6099633
+        ]
+      },
+      "length_m": 96.3,
+      "corridor_dist_m": 301.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G035",
+      "osm_way_ids": [
+        775140679
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "-1"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0639592857142857,
+          101.60028332857142
+        ],
+        "start": [
+          3.0643539,
+          101.5999784
+        ],
+        "end": [
+          3.063424,
+          101.6004951
+        ]
+      },
+      "length_m": 123.0,
+      "corridor_dist_m": 492.3,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=-1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G036",
+      "osm_way_ids": [
+        775140680
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "2"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06308925,
+          101.60053492499999
+        ],
+        "start": [
+          3.0632304,
+          101.6007224
+        ],
+        "end": [
+          3.0629416,
+          101.600347
+        ]
+      },
+      "length_m": 55.9,
+      "corridor_dist_m": 483.6,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=2) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G039",
+      "osm_way_ids": [
+        776301356
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07313145,
+          101.60055940000001
+        ],
+        "start": [
+          3.0733516,
+          101.6005598
+        ],
+        "end": [
+          3.0729113,
+          101.600559
+        ]
+      },
+      "length_m": 49.0,
+      "corridor_dist_m": 547.3,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G040",
+      "osm_way_ids": [
+        777826792
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0752446333333334,
+          101.60866333333333
+        ],
+        "start": [
+          3.074799,
+          101.6086609
+        ],
+        "end": [
+          3.0755657,
+          101.6086651
+        ]
+      },
+      "length_m": 85.2,
+      "corridor_dist_m": 347.0,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G041",
+      "osm_way_ids": [
+        820509852
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0663442153846154,
+          101.6074693076923
+        ],
+        "start": [
+          3.0661404,
+          101.6102409
+        ],
+        "end": [
+          3.0668425,
+          101.6056558
+        ]
+      },
+      "length_m": 553.5,
+      "corridor_dist_m": 108.7,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G042",
+      "osm_way_ids": [
+        921167830
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07058186,
+          101.6079401
+        ],
+        "start": [
+          3.0709703,
+          101.6078281
+        ],
+        "end": [
+          3.0701602,
+          101.6082427
+        ]
+      },
+      "length_m": 110.3,
+      "corridor_dist_m": 201.4,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G043",
+      "osm_way_ids": [
+        921167831
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.068661022222222,
+          101.60752175925928
+        ],
+        "start": [
+          3.0691161,
+          101.6060606
+        ],
+        "end": [
+          3.0701602,
+          101.6082427
+        ]
+      },
+      "length_m": 539.2,
+      "corridor_dist_m": 101.4,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G044",
+      "osm_way_ids": [
+        930746843
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0621362025000005,
+          101.60406369500002
+        ],
+        "start": [
+          3.064059,
+          101.6045296
+        ],
+        "end": [
+          3.0618682,
+          101.6018153
+        ]
+      },
+      "length_m": 695.4,
+      "corridor_dist_m": 113.7,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G045",
+      "osm_way_ids": [
+        931278406
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0751459666666663,
+          101.60771456666667
+        ],
+        "start": [
+          3.0755709,
+          101.6077169
+        ],
+        "end": [
+          3.0748042,
+          101.6077127
+        ]
+      },
+      "length_m": 85.2,
+      "corridor_dist_m": 266.5,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G046",
+      "osm_way_ids": [
+        991986584
+      ],
+      "tags": {
+        "highway": "living_street",
+        "layer": "0"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.063371981818182,
+          101.60972707272727
+        ],
+        "start": [
+          3.0634021,
+          101.6093815
+        ],
+        "end": [
+          3.0633174,
+          101.6093826
+        ]
+      },
+      "length_m": 522.6,
+      "corridor_dist_m": 245.6,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level living_street. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G048",
+      "osm_way_ids": [
+        999073853
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "sidewalk",
+        "name": "Avenue of Achievements"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0676571999999998,
+          101.60390786666666
+        ],
+        "start": [
+          3.0677719,
+          101.603908
+        ],
+        "end": [
+          3.0674964,
+          101.6039077
+        ]
+      },
+      "length_m": 30.6,
+      "corridor_dist_m": 65.3,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level Avenue of Achievements. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G049",
+      "osm_way_ids": [
+        999209165
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "name": "Sunway Medical BRT - Taylor's University Skyway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0656718800000005,
+          101.60977346
+        ],
+        "start": [
+          3.0656479,
+          101.6086382
+        ],
+        "end": [
+          3.0656864,
+          101.610593
+        ]
+      },
+      "length_m": 217.8,
+      "corridor_dist_m": 172.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G050",
+      "osm_way_ids": [
+        1063221996
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0658305,
+          101.60857816666665
+        ],
+        "start": [
+          3.0656479,
+          101.6086382
+        ],
+        "end": [
+          3.0661015,
+          101.6085335
+        ]
+      },
+      "length_m": 53.5,
+      "corridor_dist_m": 170.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G053",
+      "osm_way_ids": [
+        1120344217
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0677242,
+          101.60452425
+        ],
+        "start": [
+          3.0677322,
+          101.6045643
+        ],
+        "end": [
+          3.0677162,
+          101.6044842
+        ]
+      },
+      "length_m": 9.1,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "No coverage tag, ground-level, but shares an endpoint with a covered=yes way: may be the exposed approach or a covered extension. Determine cover from imagery.",
+      "evidence_needed": "Overhead imagery at the junction; street-level along the way.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G055",
+      "osm_way_ids": [
+        1230756958
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.068133125,
+          101.60947457500001
+        ],
+        "start": [
+          3.0681559,
+          101.6092604
+        ],
+        "end": [
+          3.068109,
+          101.6095971
+        ]
+      },
+      "length_m": 38.0,
+      "corridor_dist_m": 420.4,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G056",
+      "osm_way_ids": [
+        1230756959
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "name": "Eco Walk"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0681680958333337,
+          101.60913214166668
+        ],
+        "start": [
+          3.0662978,
+          101.608015
+        ],
+        "end": [
+          3.0694723,
+          101.6102686
+        ]
+      },
+      "length_m": 533.4,
+      "corridor_dist_m": 173.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G057",
+      "osm_way_ids": [
+        1232335176
+      ],
+      "tags": {
+        "highway": "footway",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06759145,
+          101.60461515
+        ],
+        "start": [
+          3.0675277,
+          101.6047114
+        ],
+        "end": [
+          3.0676552,
+          101.6045189
+        ]
+      },
+      "length_m": 25.6,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway. Shares an endpoint with a covered=yes way \u2014 likely a covered-network transition point.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G058",
+      "osm_way_ids": [
+        1232335177
+      ],
+      "tags": {
+        "highway": "footway",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0636044499999997,
+          101.6091153
+        ],
+        "start": [
+          3.0637765,
+          101.6091189
+        ],
+        "end": [
+          3.0634324,
+          101.6091117
+        ]
+      },
+      "length_m": 38.3,
+      "corridor_dist_m": 241.8,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor feature (indoor=yes): under a roof by definition. Confirm it is an enclosed walkable space and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the enclosing building.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G060",
+      "osm_way_ids": [
+        1232335179
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06425665,
+          101.609139
+        ],
+        "start": [
+          3.0644289,
+          101.6091655
+        ],
+        "end": [
+          3.0640844,
+          101.6091125
+        ]
+      },
+      "length_m": 38.8,
+      "corridor_dist_m": 218.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor feature (indoor=yes): under a roof by definition. Confirm it is an enclosed walkable space and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the enclosing building.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G061",
+      "osm_way_ids": [
+        1234667533
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06836895,
+          101.6038791
+        ],
+        "start": [
+          3.0683626,
+          101.6042885
+        ],
+        "end": [
+          3.0683753,
+          101.6034697
+        ]
+      },
+      "length_m": 90.9,
+      "corridor_dist_m": 45.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G062",
+      "osm_way_ids": [
+        1234667534
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0683595333333336,
+          101.60448596666667
+        ],
+        "start": [
+          3.0683563,
+          101.6046954
+        ],
+        "end": [
+          3.0683626,
+          101.6042885
+        ]
+      },
+      "length_m": 45.2,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway. Shares an endpoint with a covered=yes way \u2014 likely a covered-network transition point.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G064",
+      "osm_way_ids": [
+        1249942558
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0677807666666665,
+          101.60666806666666
+        ],
+        "start": [
+          3.0673821,
+          101.6064722
+        ],
+        "end": [
+          3.0680353,
+          101.6068853
+        ]
+      },
+      "length_m": 92.6,
+      "corridor_dist_m": 198.7,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G065",
+      "osm_way_ids": [
+        1303647076
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0730378714285713,
+          101.60774300000001
+        ],
+        "start": [
+          3.07296,
+          101.6088152
+        ],
+        "end": [
+          3.0730476,
+          101.6060707
+        ]
+      },
+      "length_m": 319.3,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G066",
+      "osm_way_ids": [
+        1303647079
+      ],
+      "tags": {
+        "highway": "corridor",
+        "layer": "-1",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0722662857142855,
+          101.60736054285714
+        ],
+        "start": [
+          3.0720421,
+          101.6060816
+        ],
+        "end": [
+          3.0723582,
+          101.6081471
+        ]
+      },
+      "length_m": 262.2,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G067",
+      "osm_way_ids": [
+        1303647080
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0727254000000004,
+          101.60817211999999
+        ],
+        "start": [
+          3.0729589,
+          101.6087151
+        ],
+        "end": [
+          3.0723686,
+          101.6076465
+        ]
+      },
+      "length_m": 186.2,
+      "corridor_dist_m": 174.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G068",
+      "osm_way_ids": [
+        1303647081
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0725626,
+          101.60814535
+        ],
+        "start": [
+          3.0723582,
+          101.6081471
+        ],
+        "end": [
+          3.072767,
+          101.6081436
+        ]
+      },
+      "length_m": 45.5,
+      "corridor_dist_m": 230.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G069",
+      "osm_way_ids": [
+        1303647082
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0729262999999998,
+          101.60764645
+        ],
+        "start": [
+          3.072778,
+          101.607647
+        ],
+        "end": [
+          3.0730746,
+          101.6076459
+        ]
+      },
+      "length_m": 33.0,
+      "corridor_dist_m": 174.9,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G070",
+      "osm_way_ids": [
+        1303647084
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0731582,
+          101.60758290000001
+        ],
+        "start": [
+          3.0730735,
+          101.6075852
+        ],
+        "end": [
+          3.0732429,
+          101.6075806
+        ]
+      },
+      "length_m": 18.8,
+      "corridor_dist_m": 168.4,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G072",
+      "osm_way_ids": [
+        1303647086
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0732652,
+          101.60757720000001
+        ],
+        "start": [
+          3.0732875,
+          101.6075738
+        ],
+        "end": [
+          3.0732429,
+          101.6075806
+        ]
+      },
+      "length_m": 5.0,
+      "corridor_dist_m": 169.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G073",
+      "osm_way_ids": [
+        1303647087
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0731871,
+          101.6066548
+        ],
+        "start": [
+          3.0730577,
+          101.6066568
+        ],
+        "end": [
+          3.0733165,
+          101.6066528
+        ]
+      },
+      "length_m": 28.8,
+      "corridor_dist_m": 65.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G074",
+      "osm_way_ids": [
+        1303647088
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0732014000000003,
+          101.60592460000001
+        ],
+        "start": [
+          3.0733552,
+          101.605924
+        ],
+        "end": [
+          3.0730476,
+          101.6059252
+        ]
+      },
+      "length_m": 34.2,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G075",
+      "osm_way_ids": [
+        1303647089
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0714823250000003,
+          101.60478325833334
+        ],
+        "start": [
+          3.0712623,
+          101.605238
+        ],
+        "end": [
+          3.0718188,
+          101.6045718
+        ]
+      },
+      "length_m": 121.3,
+      "corridor_dist_m": 16.4,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G076",
+      "osm_way_ids": [
+        1303647090
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07061722,
+          101.60549488000001
+        ],
+        "start": [
+          3.0707394,
+          101.6056023
+        ],
+        "end": [
+          3.0704446,
+          101.6053347
+        ]
+      },
+      "length_m": 44.3,
+      "corridor_dist_m": 14.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G077",
+      "osm_way_ids": [
+        1303647091
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0723125,
+          101.60666979999999
+        ],
+        "start": [
+          3.0723057,
+          101.6072622
+        ],
+        "end": [
+          3.0723193,
+          101.6060774
+        ]
+      },
+      "length_m": 131.6,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G078",
+      "osm_way_ids": [
+        1303647092
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07338385,
+          101.6059237
+        ],
+        "start": [
+          3.0733552,
+          101.605924
+        ],
+        "end": [
+          3.0734125,
+          101.6059234
+        ]
+      },
+      "length_m": 6.4,
+      "corridor_dist_m": 34.0,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G079",
+      "osm_way_ids": [
+        1303647093
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0714003,
+          101.6054118
+        ],
+        "start": [
+          3.0714307,
+          101.605406
+        ],
+        "end": [
+          3.0713699,
+          101.6054176
+        ]
+      },
+      "length_m": 6.9,
+      "corridor_dist_m": 10.8,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G080",
+      "osm_way_ids": [
+        1303647094
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07127932,
+          101.60539263999999
+        ],
+        "start": [
+          3.0713699,
+          101.6054176
+        ],
+        "end": [
+          3.0711951,
+          101.6053181
+        ]
+      },
+      "length_m": 24.9,
+      "corridor_dist_m": 3.5,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G081",
+      "osm_way_ids": [
+        1303647095
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0711749333333334,
+          101.60534106666667
+        ],
+        "start": [
+          3.0712623,
+          101.605238
+        ],
+        "end": [
+          3.0710674,
+          101.6054671
+        ]
+      },
+      "length_m": 33.4,
+      "corridor_dist_m": 4.9,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G082",
+      "osm_way_ids": [
+        1303647096
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.071027,
+          101.60551415
+        ],
+        "start": [
+          3.0710674,
+          101.6054671
+        ],
+        "end": [
+          3.0709866,
+          101.6055612
+        ]
+      },
+      "length_m": 13.8,
+      "corridor_dist_m": 16.8,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G083",
+      "osm_way_ids": [
+        1303647097
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0708656750000003,
+          101.60563915
+        ],
+        "start": [
+          3.0709866,
+          101.6055612
+        ],
+        "end": [
+          3.0707394,
+          101.6056023
+        ]
+      },
+      "length_m": 38.0,
+      "corridor_dist_m": 10.1,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G084",
+      "osm_way_ids": [
+        1303647098
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07068025,
+          101.60567595
+        ],
+        "start": [
+          3.0706424,
+          101.6057337
+        ],
+        "end": [
+          3.0707181,
+          101.6056182
+        ]
+      },
+      "length_m": 15.3,
+      "corridor_dist_m": 2.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G085",
+      "osm_way_ids": [
+        1303647099
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0707257,
+          101.6056078
+        ],
+        "start": [
+          3.0707181,
+          101.6056182
+        ],
+        "end": [
+          3.0707333,
+          101.6055974
+        ]
+      },
+      "length_m": 2.9,
+      "corridor_dist_m": 11.6,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G086",
+      "osm_way_ids": [
+        1303647100
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0715333,
+          101.6052927
+        ],
+        "start": [
+          3.0715587,
+          101.605291
+        ],
+        "end": [
+          3.0715079,
+          101.6052944
+        ]
+      },
+      "length_m": 5.7,
+      "corridor_dist_m": 31.3,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G087",
+      "osm_way_ids": [
+        1303647101
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.071457666666667,
+          101.60533386666667
+        ],
+        "start": [
+          3.0715079,
+          101.6052944
+        ],
+        "end": [
+          3.0714307,
+          101.605406
+        ]
+      },
+      "length_m": 19.9,
+      "corridor_dist_m": 16.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G088",
+      "osm_way_ids": [
+        1303647102
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0705681499999997,
+          101.606146
+        ],
+        "start": [
+          3.0704282,
+          101.6060911
+        ],
+        "end": [
+          3.0707081,
+          101.6062009
+        ]
+      },
+      "length_m": 33.4,
+      "corridor_dist_m": 47.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G089",
+      "osm_way_ids": [
+        1303647103
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0707658,
+          101.60631952499999
+        ],
+        "start": [
+          3.0707081,
+          101.6062009
+        ],
+        "end": [
+          3.0707935,
+          101.6064565
+        ]
+      },
+      "length_m": 32.3,
+      "corridor_dist_m": 47.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G090",
+      "osm_way_ids": [
+        1303647104
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0707992500000003,
+          101.6065729
+        ],
+        "start": [
+          3.0707935,
+          101.6064565
+        ],
+        "end": [
+          3.070805,
+          101.6066893
+        ]
+      },
+      "length_m": 25.9,
+      "corridor_dist_m": 69.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G091",
+      "osm_way_ids": [
+        1303647105
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0707888875,
+          101.60700615
+        ],
+        "start": [
+          3.070805,
+          101.6066893
+        ],
+        "end": [
+          3.0707967,
+          101.6072974
+        ]
+      },
+      "length_m": 68.4,
+      "corridor_dist_m": 92.7,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G092",
+      "osm_way_ids": [
+        1303647106
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07080355,
+          101.60737245
+        ],
+        "start": [
+          3.0707967,
+          101.6072974
+        ],
+        "end": [
+          3.0708104,
+          101.6074475
+        ]
+      },
+      "length_m": 16.7,
+      "corridor_dist_m": 155.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G094",
+      "osm_way_ids": [
+        1303647108
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0705400333333333,
+          101.60566566666665
+        ],
+        "start": [
+          3.0706255,
+          101.6055112
+        ],
+        "end": [
+          3.0703969,
+          101.6059423
+        ]
+      },
+      "length_m": 54.3,
+      "corridor_dist_m": 13.8,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level steps. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G095",
+      "osm_way_ids": [
+        1303647109
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0703744,
+          101.60599705
+        ],
+        "start": [
+          3.0703969,
+          101.6059423
+        ],
+        "end": [
+          3.0703519,
+          101.6060518
+        ]
+      },
+      "length_m": 13.2,
+      "corridor_dist_m": 34.6,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level steps. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G096",
+      "osm_way_ids": [
+        1303647110
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07039005,
+          101.60607145
+        ],
+        "start": [
+          3.0703519,
+          101.6060518
+        ],
+        "end": [
+          3.0704282,
+          101.6060911
+        ]
+      },
+      "length_m": 9.5,
+      "corridor_dist_m": 47.7,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G097",
+      "osm_way_ids": [
+        1303809993
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.071929266666667,
+          101.60582073333335
+        ],
+        "start": [
+          3.0721449,
+          101.6058854
+        ],
+        "end": [
+          3.0717853,
+          101.6056866
+        ]
+      },
+      "length_m": 55.9,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G098",
+      "osm_way_ids": [
+        1303809994
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "crossing"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.071772,
+          101.6055846
+        ],
+        "start": [
+          3.0717587,
+          101.6054826
+        ],
+        "end": [
+          3.0717853,
+          101.6056866
+        ]
+      },
+      "length_m": 22.8,
+      "corridor_dist_m": 40.0,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G099",
+      "osm_way_ids": [
+        1303809995
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.071502190909091,
+          101.60558724545453
+        ],
+        "start": [
+          3.0714307,
+          101.605406
+        ],
+        "end": [
+          3.0716036,
+          101.6057417
+        ]
+      },
+      "length_m": 47.4,
+      "corridor_dist_m": 10.6,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G100",
+      "osm_way_ids": [
+        1303809996
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0716196,
+          101.60575386666666
+        ],
+        "start": [
+          3.0716036,
+          101.6057417
+        ],
+        "end": [
+          3.0716309,
+          101.6057651
+        ]
+      },
+      "length_m": 4.1,
+      "corridor_dist_m": 20.7,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G101",
+      "osm_way_ids": [
+        1303809997
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0716241714285717,
+          101.6059077857143
+        ],
+        "start": [
+          3.0716309,
+          101.6057651
+        ],
+        "end": [
+          3.0716138,
+          101.6060925
+        ]
+      },
+      "length_m": 36.5,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G104",
+      "osm_way_ids": [
+        1303810000
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0721675875,
+          101.6085594625
+        ],
+        "start": [
+          3.0720743,
+          101.6087629
+        ],
+        "end": [
+          3.0722095,
+          101.6083697
+        ]
+      },
+      "length_m": 50.7,
+      "corridor_dist_m": 254.7,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G105",
+      "osm_way_ids": [
+        1303810001
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0653963249999996,
+          101.60157655
+        ],
+        "start": [
+          3.0653151,
+          101.6015415
+        ],
+        "end": [
+          3.0655276,
+          101.6016099
+        ]
+      },
+      "length_m": 31.7,
+      "corridor_dist_m": 322.7,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G106",
+      "osm_way_ids": [
+        1303810002
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.065251825,
+          101.601543075
+        ],
+        "start": [
+          3.0653151,
+          101.6015415
+        ],
+        "end": [
+          3.0652026,
+          101.6015441
+        ]
+      },
+      "length_m": 12.5,
+      "corridor_dist_m": 332.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G107",
+      "osm_way_ids": [
+        1309283276
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0732866666666667,
+          101.60451963333333
+        ],
+        "start": [
+          3.0733828,
+          101.6051035
+        ],
+        "end": [
+          3.073179,
+          101.6040802
+        ]
+      },
+      "length_m": 116.8,
+      "corridor_dist_m": 56.2,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G108",
+      "osm_way_ids": [
+        1364063296
+      ],
+      "tags": {
+        "highway": "corridor",
+        "indoor": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0723818,
+          101.6053995
+        ],
+        "start": [
+          3.0723818,
+          101.6053226
+        ],
+        "end": [
+          3.0723818,
+          101.6054764
+        ]
+      },
+      "length_m": 17.1,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Indoor corridor (highway=corridor + indoor=yes): inside a building, covered by definition. Confirm it is a real enclosed walkable corridor (not an open atrium) and tag covered=yes.",
+      "evidence_needed": "Overhead imagery of the building footprint; street-level entrance if needed.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G109",
+      "osm_way_ids": [
+        1427875104
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07352122,
+          101.6079833
+        ],
+        "start": [
+          3.0735422,
+          101.6086968
+        ],
+        "end": [
+          3.0734761,
+          101.6077305
+        ]
+      },
+      "length_m": 113.3,
+      "corridor_dist_m": 190.5,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G110",
+      "osm_way_ids": [
+        1427916322
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.07365958,
+          101.60809963999999
+        ],
+        "start": [
+          3.0737155,
+          101.6085296
+        ],
+        "end": [
+          3.0735317,
+          101.6079511
+        ]
+      },
+      "length_m": 80.8,
+      "corridor_dist_m": 215.8,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": false
+    },
+    {
+      "review_id": "G111",
+      "osm_way_ids": [
+        1460003881
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.064933,
+          101.60688325000001
+        ],
+        "start": [
+          3.0649294,
+          101.6068594
+        ],
+        "end": [
+          3.0649366,
+          101.6069071
+        ]
+      },
+      "length_m": 5.4,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Corridor traversal pulled this way out of bulk inference: no cover signal tags mid-corridor \u2014 suspected gap in the elevated linkway roofline. Verify whether this short stretch is actually roofed.",
+      "evidence_needed": "Overhead imagery at this exact corridor segment; street-level if ambiguous.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G112",
+      "osm_way_ids": [
+        1460003887
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0693232999999998,
+          101.60513370000001
+        ],
+        "start": [
+          3.0693232,
+          101.6051448
+        ],
+        "end": [
+          3.0693234,
+          101.6051226
+        ]
+      },
+      "length_m": 2.5,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway. Shares an endpoint with a covered=yes way \u2014 likely a covered-network transition point.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G113",
+      "osm_way_ids": [
+        1460003888
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0658421333333337,
+          101.6065466
+        ],
+        "start": [
+          3.0663197,
+          101.6064987
+        ],
+        "end": [
+          3.0652069,
+          101.6065658
+        ]
+      },
+      "length_m": 124.8,
+      "corridor_dist_m": 22.5,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G114",
+      "osm_way_ids": [
+        1460003889
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06536675,
+          101.60516995
+        ],
+        "start": [
+          3.065185,
+          101.6051487
+        ],
+        "end": [
+          3.0655485,
+          101.6051912
+        ]
+      },
+      "length_m": 40.7,
+      "corridor_dist_m": 10.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G115",
+      "osm_way_ids": [
+        1460003890
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0655624,
+          101.60525615
+        ],
+        "start": [
+          3.0655485,
+          101.6051912
+        ],
+        "end": [
+          3.0655763,
+          101.6053211
+        ]
+      },
+      "length_m": 14.8,
+      "corridor_dist_m": 50.3,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level steps. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G116",
+      "osm_way_ids": [
+        1460003891
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06558698,
+          101.60495251999998
+        ],
+        "start": [
+          3.0656598,
+          101.6045424
+        ],
+        "end": [
+          3.0655853,
+          101.6054518
+        ]
+      },
+      "length_m": 105.5,
+      "corridor_dist_m": 2.3,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G117",
+      "osm_way_ids": [
+        1467743200
+      ],
+      "tags": {
+        "highway": "pedestrian",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.06826725,
+          101.60489375
+        ],
+        "start": [
+          3.0682641,
+          101.6046939
+        ],
+        "end": [
+          3.0682704,
+          101.6050936
+        ]
+      },
+      "length_m": 44.4,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": true,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway. Shares an endpoint with a covered=yes way \u2014 likely a covered-network transition point.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G118",
+      "osm_way_ids": [
+        1467745042
+      ],
+      "tags": {
+        "highway": "steps"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0650859500000003,
+          101.60486019999999
+        ],
+        "start": [
+          3.0650783,
+          101.6046654
+        ],
+        "end": [
+          3.0650936,
+          101.605055
+        ]
+      },
+      "length_m": 43.3,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Corridor traversal pulled this way out of bulk inference: no cover signal tags mid-corridor \u2014 suspected gap in the elevated linkway roofline. Verify whether this short stretch is actually roofed.",
+      "evidence_needed": "Overhead imagery at this exact corridor segment; street-level if ambiguous.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G119",
+      "osm_way_ids": [
+        1467785088
+      ],
+      "tags": {
+        "highway": "footway",
+        "tunnel": "building_passage"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0649223,
+          101.6079675
+        ],
+        "start": [
+          3.064924,
+          101.6072667
+        ],
+        "end": [
+          3.0649206,
+          101.6086683
+        ]
+      },
+      "length_m": 155.6,
+      "corridor_dist_m": 0.0,
+      "adjacent_to_covered_network": false,
+      "reason": "Tagged tunnel=building_passage: passes through a building, so overhead cover is implied by definition. Confirm the passage is enclosed and record covered=yes with built-passage provenance.",
+      "evidence_needed": "Overhead imagery + street-level to confirm enclosed passage vs open gap.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G120",
+      "osm_way_ids": [
+        1467785089
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.066761325,
+          101.6034384875
+        ],
+        "start": [
+          3.0689956,
+          101.6032966
+        ],
+        "end": [
+          3.0655031,
+          101.604353
+        ]
+      },
+      "length_m": 510.7,
+      "corridor_dist_m": 23.8,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G121",
+      "osm_way_ids": [
+        1467785090
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "crossing"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0655248250000002,
+          101.604501775
+        ],
+        "start": [
+          3.0655031,
+          101.604353
+        ],
+        "end": [
+          3.0655719,
+          101.6046285
+        ]
+      },
+      "length_m": 33.2,
+      "corridor_dist_m": 2.3,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G130",
+      "osm_way_ids": [
+        1469997601
+      ],
+      "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0654742,
+          101.60226924285713
+        ],
+        "start": [
+          3.065429,
+          101.6011283
+        ],
+        "end": [
+          3.065513,
+          101.6033133
+        ]
+      },
+      "length_m": 243.0,
+      "corridor_dist_m": 134.5,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G131",
+      "osm_way_ids": [
+        1469997607
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0642616,
+          101.60932285
+        ],
+        "start": [
+          3.0640943,
+          101.6094802
+        ],
+        "end": [
+          3.0644289,
+          101.6091655
+        ]
+      },
+      "length_m": 51.0,
+      "corridor_dist_m": 218.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G132",
+      "osm_way_ids": [
+        1469997608
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.065489433333333,
+          101.60864693333333
+        ],
+        "start": [
+          3.0652054,
+          101.6086624
+        ],
+        "end": [
+          3.0656479,
+          101.6086382
+        ]
+      },
+      "length_m": 49.3,
+      "corridor_dist_m": 158.2,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G133",
+      "osm_way_ids": [
+        1481677600
+      ],
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "bridge": "yes"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0660082,
+          101.60675330000001
+        ],
+        "start": [
+          3.0659998,
+          101.6065753
+        ],
+        "end": [
+          3.0660166,
+          101.6069313
+        ]
+      },
+      "length_m": 39.6,
+      "corridor_dist_m": 108.1,
+      "adjacent_to_covered_network": false,
+      "reason": "Elevated structure (bridge=yes / layer=1) but NO covered tag: elevation alone is not cover. Determine from imagery whether it has a continuous roof (covered linkway) or is an open elevated walkway.",
+      "evidence_needed": "Overhead imagery along the full length; street-level to distinguish roof vs open rail.",
+      "candidate_transition_points": [],
+      "priority": "high",
+      "batch": false
+    },
+    {
+      "review_id": "G134",
+      "osm_way_ids": [
+        1511509679
+      ],
+      "tags": {
+        "highway": "footway"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0639820999999996,
+          101.60487985
+        ],
+        "start": [
+          3.0638748,
+          101.6047965
+        ],
+        "end": [
+          3.0640894,
+          101.6049632
+        ]
+      },
+      "length_m": 30.2,
+      "corridor_dist_m": 106.8,
+      "adjacent_to_covered_network": false,
+      "reason": "No coverage tag and no implicit signal; ground-level footway. Near the demo corridor \u2014 determine from imagery whether any built overhead cover exists (trees/shadows don't count).",
+      "evidence_needed": "Overhead imagery; batch spot-check acceptable if clearly open.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": false
+    },
+    {
+      "review_id": "G135",
+      "osm_way_ids": [
+        151224274,
+        210994244,
+        210994304,
+        221195953,
+        221195960,
+        221195964,
+        221195967,
+        221195973,
+        221195974,
+        263461647,
+        603815895,
+        764530864,
+        776301354,
+        776301355,
+        992117732,
+        1230756957,
+        1232335178,
+        1234667535,
+        1303809998,
+        1303809999,
+        1469997594,
+        1469997595,
+        1469997596,
+        1469997597,
+        1469997598,
+        1469997599,
+        1469997600
+      ],
+      "tags": {
+        "_note": "batch of clearly ground-level open ways"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.068571251975309,
+          101.60554714000001
+        ],
+        "start": [
+          3.0742604,
+          101.6087412
+        ],
+        "end": [
+          3.0654456,
+          101.6015779
+        ]
+      },
+      "length_m": 534.7,
+      "corridor_dist_m": null,
+      "adjacent_to_covered_network": false,
+      "reason": "Batch of 27 short ground-level ways with no coverage tag, no implicit signal, no covered-network adjacency, and no building-passage or elevation context. Expected open to sky; spot-check with imagery.",
+      "evidence_needed": "Spot-check overhead imagery of representative members.",
+      "candidate_transition_points": [],
+      "priority": "low",
+      "batch": true
+    },
+    {
+      "review_id": "G136",
+      "osm_way_ids": [
+        1063221997,
+        1063221998,
+        1303647085,
+        1303647107,
+        1467785091
+      ],
+      "tags": {
+        "_note": "batch of clearly ground-level open ways"
+      },
+      "geometry_ref": {
+        "centroid": [
+          3.0687439650000004,
+          101.6071417075
+        ],
+        "start": [
+          3.0656132,
+          101.6085067
+        ],
+        "end": [
+          3.0683767,
+          101.6033769
+        ]
+      },
+      "length_m": 94.7,
+      "corridor_dist_m": null,
+      "adjacent_to_covered_network": false,
+      "reason": "Batch of 5 short ground-level ways with no coverage tag, no implicit signal, no covered-network adjacency, and no building-passage or elevation context. Expected open to sky; spot-check with imagery.",
+      "evidence_needed": "Spot-check overhead imagery of representative members.",
+      "candidate_transition_points": [],
+      "priority": "medium",
+      "batch": true
+    }
+  ],
+  "stats": {
+    "batched_member_ways": 32,
+    "priority_high": 35,
+    "priority_medium": 61,
+    "priority_low": 8,
+    "total_items": 104,
+    "individual_items": 102,
+    "batch_items": 2,
+    "member_ways_queued": 134
+  }
+}
