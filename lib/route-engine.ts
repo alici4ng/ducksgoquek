@@ -319,16 +319,18 @@ function pathToD(points: Point[]) {
     .join(' ')
 }
 
-function edgeCost(edge: Edge, meters: number, shadePreference: number) {
+function edgeCost(edge: Edge, meters: number, shadePreference: number, rain: boolean) {
   const meta = COVERAGE_META[edge.coverage]
   const minutes = meters / meta.speed + (edge.coverage === 'transit' ? TRANSIT_BOARDING_MINUTES : 0)
   // Exposure is charged as extra perceived minutes, so the slider reads as
-  // "how many minutes is a minute of full sun worth to me".
-  const penalty = 1 + shadePreference * 6 * meta.exposure
+  // "how many minutes is a minute of full sun worth to me". Rain adds its own
+  // surcharge: a minute in the wet is worth about eight dry ones.
+  let penalty = 1 + shadePreference * 6 * meta.exposure
+  if (rain) penalty += 8 * meta.wetness
   return { minutes, cost: minutes * penalty }
 }
 
-function dijkstra(from: string, to: string, shadePreference: number) {
+function dijkstra(from: string, to: string, shadePreference: number, rain: boolean) {
   const best: Record<string, number> = { [from]: 0 }
   const prev: Record<string, { node: string; edgeIndex: number; forward: boolean }> = {}
   const visited = new Set<string>()
@@ -348,7 +350,7 @@ function dijkstra(from: string, to: string, shadePreference: number) {
 
     for (const link of ADJACENCY[current] ?? []) {
       const edge = EDGES[link.edgeIndex]
-      const { cost } = edgeCost(edge, EDGE_METERS[link.edgeIndex], shadePreference)
+      const { cost } = edgeCost(edge, EDGE_METERS[link.edgeIndex], shadePreference, rain)
       const next = currentCost + cost
       if (next < (best[link.to] ?? Infinity)) {
         best[link.to] = next
@@ -393,12 +395,13 @@ export function buildRoute(
   shadePreference: number,
   label: string,
   id: string,
+  rain = false,
 ): Route | null {
   const from = placeById(fromPlaceId)
   const to = placeById(toPlaceId)
   if (!from || !to || from.node === to.node) return null
 
-  const chain = dijkstra(from.node, to.node, shadePreference)
+  const chain = dijkstra(from.node, to.node, shadePreference, rain)
   if (!chain) return null
 
   // Merge consecutive links that share a coverage type into one instruction.
@@ -410,7 +413,7 @@ export function buildRoute(
     const edge = EDGES[link.edgeIndex]
     const points = edgePoints(edge, link.forward)
     const meters = EDGE_METERS[link.edgeIndex]
-    const { minutes } = edgeCost(edge, meters, shadePreference)
+    const { minutes } = edgeCost(edge, meters, shadePreference, rain)
     const nextNode = link.forward ? edge.b : edge.a
     const previous = steps[steps.length - 1]
 
@@ -472,19 +475,27 @@ export const ROUTE_OPTIONS = [
   { id: 'fastest', label: 'Fastest', shadePreference: 0 },
 ] as const
 
+/** Wet-day equivalents: the aggressive strategy reads as staying dry. */
+export const RAIN_ROUTE_OPTIONS = [
+  { id: 'driest', label: 'Driest', shadePreference: 1 },
+  { id: 'balanced', label: 'Balanced', shadePreference: 0.45 },
+  { id: 'fastest', label: 'Fastest', shadePreference: 0 },
+] as const
+
 export type RouteOptionId = (typeof ROUTE_OPTIONS)[number]['id']
 
 /** All three strategies, de-duplicated when two of them agree. */
-export function buildRouteSet(fromPlaceId: string, toPlaceId: string): Route[] {
+export function buildRouteSet(fromPlaceId: string, toPlaceId: string, rain = false): Route[] {
   const seen = new Set<string>()
   const routes: Route[] = []
-  for (const option of ROUTE_OPTIONS) {
+  for (const option of rain ? RAIN_ROUTE_OPTIONS : ROUTE_OPTIONS) {
     const route = buildRoute(
       fromPlaceId,
       toPlaceId,
       option.shadePreference,
       option.label,
       option.id,
+      rain,
     )
     if (!route) continue
     const signature = route.steps.map((s) => s.d).join('|')

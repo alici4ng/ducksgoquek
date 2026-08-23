@@ -23,6 +23,8 @@ export const COVERAGE_META: Record<
     covered: boolean
     /** UV that still reaches you, 0 = none. Drives the coverage score. */
     exposure: number
+    /** Rain that still reaches you, 0 = dry. Drives rain-mode routing. */
+    wetness: number
     /** Travel speed in metres per minute. */
     speed: number
   }
@@ -34,6 +36,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-indoor-ink',
     covered: true,
     exposure: 0.05,
+    wetness: 0,
     speed: 72,
   },
   underground: {
@@ -43,6 +46,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-underground-ink',
     covered: true,
     exposure: 0,
+    wetness: 0,
     speed: 76,
   },
   bridge: {
@@ -52,6 +56,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-bridge-ink',
     covered: true,
     exposure: 0.18,
+    wetness: 0,
     speed: 78,
   },
   arcade: {
@@ -61,6 +66,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-arcade-ink',
     covered: true,
     exposure: 0.3,
+    wetness: 0.35,
     speed: 74,
   },
   transit: {
@@ -70,6 +76,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-transit-ink',
     covered: true,
     exposure: 0.1,
+    wetness: 0,
     speed: 330,
   },
   openair: {
@@ -79,6 +86,7 @@ export const COVERAGE_META: Record<
     ink: 'text-coverage-openair-ink',
     covered: false,
     exposure: 1,
+    wetness: 1,
     speed: 80,
   },
 }
