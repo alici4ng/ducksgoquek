@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "tower1", "building": "office", "height": "60" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [101.6065651, 3.0681643],
+          [101.6068349, 3.0681643],
+          [101.6068349, 3.0684357],
+          [101.6065651, 3.0684357],
+          [101.6065651, 3.0681643]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "canopy1", "building": "roof" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [101.6075546, 3.0682548],
+          [101.6076446, 3.0682548],
+          [101.6076446, 3.0683452],
+          [101.6075546, 3.0683452],
+          [101.6075546, 3.0682548]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "untagged1" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [101.6066325, 3.0668756],
+          [101.6067675, 3.0668756],
+          [101.6067675, 3.0670112],
+          [101.6066325, 3.0670112],
+          [101.6066325, 3.0668756]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "broken1", "building": "yes" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[101.6067, 3.0683], [101.6068]]]
+      }
+    }
+  ]
+}
